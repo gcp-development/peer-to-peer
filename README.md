@@ -1,5 +1,5 @@
 # peer-to-peer
-Peer To Peer with Lib
+Peer To Peer
 
 References:
 
