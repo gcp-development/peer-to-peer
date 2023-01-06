@@ -3,4 +3,4 @@ Peer To Peer
 
 References:
 
-[Rust Official Images](https://hub.docker.com/_/rust)
+[Rust Official Image](https://hub.docker.com/_/rust)
