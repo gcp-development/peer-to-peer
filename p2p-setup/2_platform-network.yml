@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: platform-network
+  namespace: peer-to-peer-platform
+spec:
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              network/platform-network: "true"
+  podSelector:
+    matchLabels:
+      network/platform-network: "true"
