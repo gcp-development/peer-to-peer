@@ -13,10 +13,12 @@ spec:
   template:
     metadata:
       labels:
+        network/platform-network: "true"
+        service: node-a-service
         app: node-a-deployment
     spec:
       containers:
         - name: node-a-deployment
-          image: bsilveira1974/p2p-node-image:1.0
+          image: bsilveira1974/p2p-app-image:1.0
           ports:
             - containerPort: 4242

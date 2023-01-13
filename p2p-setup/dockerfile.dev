@@ -1,12 +1,7 @@
 FROM rust:latest
-
 RUN apt-get update && apt-get -y install protobuf-compiler
-
 WORKDIR /home/silveira/Desktop/k8_projects/p2p-app
 COPY . .
-
 RUN cargo install --path .
-
 EXPOSE 4242
-
-CMD ["p2p-app"]
+CMD p2p-app "default"

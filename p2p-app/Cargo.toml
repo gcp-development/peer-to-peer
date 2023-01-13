@@ -9,3 +9,4 @@ edition = "2021"
 libp2p = "0.48.0"
 futures = "0.3.25"
 async-std = { version = "1.12.0", features = ["attributes"] }
+chrono = "0.4.23"
