@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-b-service
+  namespace: peer-to-peer-platform
+  labels:
+    service: node-b-service
+spec:
+  selector:
+    service: node-b-service
+  ports:
+    - name: "default"
+      port: 4242
+      targetPort: 4242

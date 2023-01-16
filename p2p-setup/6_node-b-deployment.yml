@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-b-deployment
+  namespace: peer-to-peer-platform
+  labels:
+    app: node-b-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-b-deployment
+  template:
+    metadata:
+      labels:
+        network/platform-network: "true"
+        service: node-b-service
+        app: node-b-deployment
+    spec:
+      containers:
+        - name: node-b-deployment
+          image: bsilveira1974/p2p-app-image:1.0
+          ports:
+            - containerPort: 4242

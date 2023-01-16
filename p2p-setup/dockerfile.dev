@@ -4,4 +4,4 @@ WORKDIR /home/silveira/Desktop/k8_projects/p2p-app
 COPY . .
 RUN cargo install --path .
 EXPOSE 4242
-CMD p2p-app "default"
+CMD ["p2p-app","default"]
