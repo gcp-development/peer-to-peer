@@ -42,17 +42,15 @@ async fn main() -> Result<(), Box<dyn Error>> {
             let transport = libp2p::development_transport(local_key).await?;
             let behaviour = ping::Behaviour::new(ping::Config::new().with_keep_alive(true));
             let mut swarm = Swarm::new(transport, behaviour, local_peer_id);
-            //let address = args[1].parse::<Multiaddr>().unwrap();
 
             swarm.listen_on("/ip4/0.0.0.0/tcp/0".parse()?)?;
             println!("Local peer id: {:?}", local_peer_id);
 
-            let remote: Multiaddr = args[1].parse()?;
-            Err(Error::InvalidMultiaddr);
-            //Ok(());
- //           swarm.dial(remote)?;
-
-
+            if args[1].parse::<Multiaddr>().is_ok() {
+                let multi_address:Multiaddr= args[1].parse::<Multiaddr>().unwrap();
+                swarm.dial(multi_address)?;
+                println!("Dialed {}", args[1].as_str())
+            }
             loop {
                 match swarm.select_next_some().await {
                     SwarmEvent::NewListenAddr { address, .. } => println!("Listening on {:?}", address),
