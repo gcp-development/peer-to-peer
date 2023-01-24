@@ -1,7 +1,7 @@
 # peer-to-peer (Work In Progress)
 Peer To Peer 
 
-![image](https://user-images.githubusercontent.com/76512851/212056259-67520e4b-703f-44a7-bf2f-2eb06d11f81b.png)
+![image](https://user-images.githubusercontent.com/76512851/214358618-6d3895ff-2da4-4169-840c-200499844b58.png)
 
 
 ![image](https://user-images.githubusercontent.com/76512851/214309185-c9134ca0-1c2c-4c1e-8706-bd8e932c09b1.png)
