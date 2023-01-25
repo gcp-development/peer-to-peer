@@ -43,6 +43,8 @@ docker tag p2p-pod-b:1.0 {docker.hub}/p2p-pod-b:1.0
 docker push {docker.hub}/p2p-pod-b:1.0
 ```
 
+<hr>
+
 ```bash
 kubectl apply -f 1_namespace.yml
 ```
