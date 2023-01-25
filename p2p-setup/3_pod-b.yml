@@ -6,6 +6,7 @@ metadata:
 spec:
   containers:
     - name: pod-b
-      image: bsilveira1974/pod-b-image:1.0
+      image: bsilveira1974/p2p-pod-b:1.0
+      imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 4242

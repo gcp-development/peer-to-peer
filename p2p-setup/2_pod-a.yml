@@ -6,6 +6,6 @@ metadata:
 spec:
   containers:
     - name: pod-a
-      image: bsilveira1974/pod-a-image:1.0
+      image: bsilveira1974/p2p-pod-a:1.0
       ports:
         - containerPort: 4242

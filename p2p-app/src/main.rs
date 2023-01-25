@@ -3,7 +3,7 @@ use libp2p::swarm::{Swarm, SwarmEvent};
 use libp2p::{identity, Multiaddr, PeerId, ping};
 use std::error::Error;
 
-static POD_IP_A: &str = "172.17.0.2/tcp/";
+static POD_IP_A: &str = "172.17.0.3/tcp/";
 static POD_IP_B: &str = "172.17.0.4/tcp/";
 static POD_PORT: &str = "4242";
 
