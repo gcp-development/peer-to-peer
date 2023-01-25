@@ -7,6 +7,9 @@ For this setup its assume that these software are installed and running:
   <li><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" target="_blank">kubectl</a></li>
 </ul>
 
+<hr>
+
+![image](https://user-images.githubusercontent.com/76512851/214585072-0e59a212-ae67-4104-8185-8e150ddd39e3.png)
 
 ```bash
 docker build -f /p2p-setup/pod-a-dockerfile.dev -t p2p-pod-a:1.0 .
