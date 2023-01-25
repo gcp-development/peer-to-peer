@@ -8,6 +8,7 @@ For this setup its assume that these software are installed and running:
 </ul>
 
 <hr>
+
 ## Dockerfile
 
 ![image](https://user-images.githubusercontent.com/76512851/214598654-10fe08b3-0297-4122-a26f-d12c894f7491.png)
@@ -97,3 +98,12 @@ Whit this information is very easy to preview which IPs will be available for th
 Note: assigning a Pod a static IP address is an anti-pattern in Kubernetes environments.This example is only for demonstrative purposes.
 
 <hr>
+
+References
+
+[Dockerfile reference] (https://docs.docker.com/engine/reference/builder/)
+
+[minikube](https://minikube.sigs.k8s.io/docs/)
+
+[Kubernetes Documentation](https://kubernetes.io/docs/home/)
+
