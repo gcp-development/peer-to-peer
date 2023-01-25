@@ -6,3 +6,40 @@ For this setup its assume that these software are installed and running:
   <li><a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">minikube</a></li>
   <li><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" target="_blank">kubectl</a></li>
 </ul>
+
+
+```bash
+docker build -f /p2p-setup/pod-a-dockerfile.dev -t p2p-pod-a:1.0 .
+```
+
+```bash
+docker tag p2p-pod-a:1.0 {docker.hub}/p2p-pod-a:1.0
+```
+
+```bash
+docker push {docker.hub}/p2p-pod-a:1.0
+```
+
+```bash
+docker build -f /p2p-setup/pod-b-dockerfile.dev -t p2p-pod-b:1.0 .
+```
+
+```bash
+docker tag p2p-pod-b:1.0 {docker.hub}/p2p-pod-b:1.0
+```
+
+```bash
+docker push {docker.hub}/p2p-pod-b:1.0
+```
+
+```bash
+kubectl apply -f 1_namespace.yml
+```
+
+```bash
+kubectl apply -f 2_pod-a.yml
+```
+
+```bash
+kubectl apply -f 3_pod-b.yml
+```
