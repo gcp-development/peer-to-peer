@@ -43,6 +43,8 @@ docker tag p2p-pod-b:1.0 {docker.hub}/p2p-pod-b:1.0
 docker push {docker.hub}/p2p-pod-b:1.0
 ```
 
+![image](https://user-images.githubusercontent.com/76512851/214597726-33990b1c-45d7-4d7b-ba21-30b5cac7f17a.png)
+
 <hr>
 
 ```bash
