@@ -83,7 +83,7 @@ kubectl logs -f pod-b --namespace=peer-to-peer-platform
 
 <hr>
 
-## How do we know which are the pods IPs?
+## How do we know the Pods IPs?
 
 ```bash
 kubectl get po --all-namespaces -o wide
@@ -95,7 +95,7 @@ The kube-system (coredns-565d847f94-srfc5) is responsible to create [DNS records
 
 Whit this information is very easy to preview which IPs will be available for the pods. In ours case 172.17.0.3 and 172.17.0.4.
 
-Note: assigning a Pod a static IP address is an anti-pattern in Kubernetes environments.This example is only for demonstrative purposes.
+Note: assigning a Pod a static IP address is an anti-pattern in Kubernetes environments. This example is only for demonstrative purposes.
 
 <hr>
 
