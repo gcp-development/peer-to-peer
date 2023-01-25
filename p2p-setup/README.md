@@ -101,7 +101,7 @@ Note: assigning a Pod a static IP address is an anti-pattern in Kubernetes envir
 
 References
 
-[Dockerfile reference] (https://docs.docker.com/engine/reference/builder/)
+[Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 
 [minikube](https://minikube.sigs.k8s.io/docs/)
 
