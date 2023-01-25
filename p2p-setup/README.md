@@ -51,6 +51,10 @@ docker push {docker.hub}/p2p-pod-b:1.0
 ```bash
 kubectl apply -f 1_namespace.yml
 ```
+Note: to list the namespaces just run "kubectl get namespaces"
+
+![image](https://user-images.githubusercontent.com/76512851/214600792-700afd92-3553-4f1d-a3fe-cebd304d89b2.png)
+
 
 ```bash
 kubectl apply -f 2_pod-a.yml
