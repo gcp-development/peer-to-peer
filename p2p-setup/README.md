@@ -61,8 +61,21 @@ kubectl apply -f 2_pod-a.yml
 ```
 
 ```bash
+kubectl logs -f pod-a --namespace=peer-to-peer-platform
+```
+
+![image](https://user-images.githubusercontent.com/76512851/214621392-270750a6-fc6d-4dc4-9108-237ce5bd045d.png)
+
+
+```bash
 kubectl apply -f 3_pod-b.yml
 ```
+
+```bash
+kubectl logs -f pod-b --namespace=peer-to-peer-platform
+```
+
+![image](https://user-images.githubusercontent.com/76512851/214621152-36dd79a8-8007-4509-a56e-8bdc0678bf66.png)
 
 <hr>
 
