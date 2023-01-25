@@ -46,6 +46,8 @@ docker push {docker.hub}/p2p-pod-b:1.0
 
 <hr>
 
+![image](https://user-images.githubusercontent.com/76512851/214600031-fd6627f0-f848-461a-9555-6f0b113a3bb8.png)
+
 ```bash
 kubectl apply -f 1_namespace.yml
 ```
