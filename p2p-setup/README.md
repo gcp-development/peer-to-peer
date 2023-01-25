@@ -63,3 +63,9 @@ kubectl apply -f 2_pod-a.yml
 ```bash
 kubectl apply -f 3_pod-b.yml
 ```
+
+<hr>
+
+```bash
+kubectl get po --all-namespaces -o wide
+```
