@@ -8,6 +8,7 @@ For this setup its assume that these software are installed and running:
 </ul>
 
 <hr>
+## Dockerfile
 
 ![image](https://user-images.githubusercontent.com/76512851/214598654-10fe08b3-0297-4122-a26f-d12c894f7491.png)
 
@@ -46,6 +47,8 @@ docker push {docker.hub}/p2p-pod-b:1.0
 
 <hr>
 
+## Pods
+
 ![image](https://user-images.githubusercontent.com/76512851/214600031-fd6627f0-f848-461a-9555-6f0b113a3bb8.png)
 
 ```bash
@@ -79,7 +82,7 @@ kubectl logs -f pod-b --namespace=peer-to-peer-platform
 
 <hr>
 
-##How do we know which are the pods IPs?
+## How do we know which are the pods IPs?
 
 ```bash
 kubectl get po --all-namespaces -o wide
