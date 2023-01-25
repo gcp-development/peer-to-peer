@@ -14,6 +14,9 @@ For this setup its assume that these software are installed and running:
 ```bash
 docker build -f /p2p-setup/pod-a-dockerfile.dev -t p2p-pod-a:1.0 .
 ```
+Note : to list images just run "docker image ls"
+
+![image](https://user-images.githubusercontent.com/76512851/214587027-dd3e709b-f498-41cc-9941-66a1ed166893.png)
 
 ```bash
 docker tag p2p-pod-a:1.0 {docker.hub}/p2p-pod-a:1.0
