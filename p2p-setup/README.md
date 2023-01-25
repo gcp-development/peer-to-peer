@@ -16,15 +16,20 @@ docker build -f /p2p-setup/pod-a-dockerfile.dev -t p2p-pod-a:1.0 .
 ```
 Note : to list images just run "docker image ls"
 
-![image](https://user-images.githubusercontent.com/76512851/214587027-dd3e709b-f498-41cc-9941-66a1ed166893.png)
+![image](https://user-images.githubusercontent.com/76512851/214587480-350a7121-ea38-4603-8923-17caf8b91683.png)
 
 ```bash
 docker tag p2p-pod-a:1.0 {docker.hub}/p2p-pod-a:1.0
 ```
 
+![image](https://user-images.githubusercontent.com/76512851/214588008-c10b9113-1fde-4ed3-80d6-55ffcdf9216e.png)
+
 ```bash
 docker push {docker.hub}/p2p-pod-a:1.0
 ```
+
+![image](https://user-images.githubusercontent.com/76512851/214589087-f62ee2b0-d66c-4f52-9001-a417094935fe.png)
+
 
 ```bash
 docker build -f /p2p-setup/pod-b-dockerfile.dev -t p2p-pod-b:1.0 .
