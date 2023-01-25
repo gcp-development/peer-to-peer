@@ -21,8 +21,7 @@ Note : to list images just run "docker image ls"
 ```bash
 docker tag p2p-pod-a:1.0 {docker.hub}/p2p-pod-a:1.0
 ```
-
-![image](https://user-images.githubusercontent.com/76512851/214596982-9879bb98-969b-4729-90d4-52737524a344.png)
+![image](https://user-images.githubusercontent.com/76512851/214598064-5c73f619-9dfe-412f-8622-3ec136fd8a9f.png)
 
 ```bash
 docker push {docker.hub}/p2p-pod-a:1.0
