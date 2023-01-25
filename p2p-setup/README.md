@@ -82,3 +82,5 @@ kubectl logs -f pod-b --namespace=peer-to-peer-platform
 ```bash
 kubectl get po --all-namespaces -o wide
 ```
+
+![image](https://user-images.githubusercontent.com/76512851/214622104-04577d9a-8db7-442c-b3c4-acb17429b1b5.png)
