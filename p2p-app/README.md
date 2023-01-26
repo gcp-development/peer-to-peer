@@ -3,8 +3,6 @@
 
 This Rust application is base in the [ping example](https://github.com/libp2p/rust-libp2p/blob/master/examples/ping.rs) for the libp2p.It was developed using the [Intellij Community](https://www.jetbrains.com/idea/download/#section=linux) with the [Rust plugin](https://www.jetbrains.com/rust/).
 
-https://github.com/libp2p/specs/blob/master/ping/ping.md
-
 To compile in release mode.
 
 ```bash
