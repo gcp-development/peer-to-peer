@@ -14,9 +14,21 @@ This demo is composed by:
 
 [p2p-setup](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup) ,This projects is associate to the Kubernetes setup.
 
+<hr>
+
+## libp2p
+
+## Architecture
 
 ![image](https://user-images.githubusercontent.com/76512851/214889597-8540ce06-66e6-4739-b8df-22823a92fb78.png)
 
+The libp2p interface acts as a thin veneer over a multitude of subsystems that are required in order for peers to be able to communicate. The main areas where these subsystems fit are:
+<ul>
+  <li>Peer Routing - Mechanism to decide which peers to use for routing particular messages. This routing can be done recursively, iteratively or even in a broadcast/multicast mode.</li>
+  <li>Swarm - Handles everything that touches the 'opening a stream' part of libp2p, from protocol muxing, stream muxing, NAT traversal and connection relaying, while being multi-transport.</li>
+  <li>Distributed Record Store - A system to store and distribute records. Records are small entries used by other systems for signaling, establishing links, announcing peers or content, and so on. They have a similar role to DNS in the broader Internet.</li>
+  <li>Discovery - Finding or identifying other peers in the network.</li>
+</ul>
 
 References:
 
