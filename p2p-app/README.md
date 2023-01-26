@@ -32,7 +32,7 @@ Where the pods IPs are defined.
 
 ![image](https://user-images.githubusercontent.com/76512851/214858437-b54f1b3f-ed59-48cb-b593-594285527c59.png)
 
-Note: to know-the pods ips please go [here](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#how-do-we-know-the-pods-ips)
+Note: to know the pods ips please go [here](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#how-do-we-know-the-pods-ips)
 
 <hr>
 
