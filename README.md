@@ -14,6 +14,10 @@ This demo is composed by:
 
 [p2p-setup](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup) ,This projects is associate to the Kubernetes setup.
 
+
+![image](https://user-images.githubusercontent.com/76512851/214889597-8540ce06-66e6-4739-b8df-22823a92fb78.png)
+
+
 References:
 
 
