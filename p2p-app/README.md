@@ -3,19 +3,7 @@
 
 This Rust application is base in the [ping example](https://github.com/libp2p/rust-libp2p/blob/master/examples/ping.rs) for the libp2p.It was developed using the [Intellij Community](https://www.jetbrains.com/idea/download/#section=linux) with the [Rust plugin](https://www.jetbrains.com/rust/).
 
-@startuml
-skinparam backgroundColor white
-
-entity Client
-entity Server
-
-== /ipfs/ping/1.0.0 ==
-loop until Client closes write
-    Client -> Server: 32 random bytes
-    Client <- Server: Same 32 random bytes
-end
-@enduml
-
+https://github.com/libp2p/specs/blob/master/ping/ping.md
 
 To compile in release mode.
 
@@ -52,4 +40,5 @@ Note: to know the pods ips please go [here](https://github.com/gcp-development/p
 
 References
 
+[ping protocol](https://github.com/libp2p/specs/blob/master/ping/ping.md)<br>
 [Rust libp2p](https://github.com/libp2p/rust-libp2p)<br>
