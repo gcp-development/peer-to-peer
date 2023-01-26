@@ -14,7 +14,7 @@ cargo run b
 ```
 
 ```bash
- cargo clean
+cargo clean
 ```
 <hr>
 
