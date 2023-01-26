@@ -38,4 +38,7 @@ Note: to know the pods ips please go [here](https://github.com/gcp-development/p
 
 References:<br>
 [ping protocol](https://github.com/libp2p/specs/blob/master/ping/ping.md)<br>
+[identify protocol](https://github.com/libp2p/specs/blob/master/identify/README.md)<br>
+[Peer Ids and Keys](https://github.com/libp2p/specs/blob/master/peer-ids/peer-ids.md)
+[Addressing in libp2p ](https://github.com/libp2p/specs/blob/master/addressing/README.md)
 [Rust libp2p](https://github.com/libp2p/rust-libp2p)<br>
