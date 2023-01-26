@@ -32,7 +32,7 @@ The libp2p interface acts as a thin veneer over a multitude of subsystems that a
   <li>Discovery - Finding or identifying other peers in the network.</li>
 </ul>
 
-References:
-
+References:<br>
+[libp2p documentation](https://docs.libp2p.io/concepts/introduction/overview/)<br>
 
 
