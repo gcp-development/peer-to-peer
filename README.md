@@ -17,5 +17,5 @@ This demo is composed by:
 
 References:
 
-[Rust libp2p](https://github.com/libp2p/rust-libp2p)<br>
+
 
