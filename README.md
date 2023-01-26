@@ -18,6 +18,8 @@ This demo is composed by:
 
 ## libp2p
 
+libp2p was designed around the philosophy of creating small components that are easy to understand and test. These components should also be able to be swapped in order to accommodate different technologies or scenarios and also make it feasible to upgrade them over time. (Microservices, anyone?!?)
+
 ## Architecture
 
 ![image](https://user-images.githubusercontent.com/76512851/214889597-8540ce06-66e6-4739-b8df-22823a92fb78.png)
