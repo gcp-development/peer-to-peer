@@ -1,7 +1,7 @@
 
 # p2p application 
 
-This Rust application is base in the (ping example)[https://github.com/libp2p/rust-libp2p/blob/master/examples/ping.rs] for the libp2p.
+This Rust application is base in the [ping example](https://github.com/libp2p/rust-libp2p/blob/master/examples/ping.rs) for the libp2p.
 
 
 
