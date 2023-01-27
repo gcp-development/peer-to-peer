@@ -13,12 +13,10 @@ Peer to peer networks(P2P) is defined as the group of devices that are connected
 
 This source code is composed by:
 <ul>
-  <li></li>
-  <li></li>
-[p2p-app](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app) ,This project is associate to the Rust application.
+  <li>><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a>,This project is associate to the Rust application.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self"p2p-setup</a>,This project is associate to the Kubernetes setup.</li>
+</ul>
 
-[p2p-setup](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup) ,This project is associate to the Kubernetes setup.
-<ul>
 <hr>
 
 ## libp2p
