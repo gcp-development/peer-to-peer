@@ -2,7 +2,6 @@
 
 ## Motivation
 
-Peer to peer networks(P2P) is defined as the group of devices that are connected together to create a network. [libp2p](https://libp2p.io/) is a modular peer-to-peer networking framework. The example provided was done using the Rust implementation of the libp2p networking stack with a Kubernetes infrastructure. The purpose of this little demo is to show how to implement a p2p network with Kubernetes and libp2p.
 
 <hr>
 
@@ -10,12 +9,16 @@ Peer to peer networks(P2P) is defined as the group of devices that are connected
 
 ![image](https://user-images.githubusercontent.com/76512851/214358618-6d3895ff-2da4-4169-840c-200499844b58.png)
 
+Peer to peer networks(P2P) is defined as the group of devices that are connected together to create a network. [libp2p](https://libp2p.io/) is a modular peer-to-peer networking framework. The example provided was done using the Rust implementation of the libp2p networking stack with a Kubernetes infrastructure. The purpose of this little demo is to show how to implement a p2p network with Kubernetes and libp2p.
+
 This source code is composed by:
+<ul>
+  <li></li>
+  <li></li>
+[p2p-app](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app) ,This project is associate to the Rust application.
 
-[p2p-app](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app) ,This projects is associate to the Rust application.
-
-[p2p-setup](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup) ,This projects is associate to the Kubernetes setup.
-
+[p2p-setup](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup) ,This project is associate to the Kubernetes setup.
+<ul>
 <hr>
 
 ## libp2p
