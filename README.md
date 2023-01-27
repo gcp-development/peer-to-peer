@@ -11,7 +11,7 @@ Peer to peer networks(P2P) is defined as the group of devices that are connected
 
 ![image](https://user-images.githubusercontent.com/76512851/214358618-6d3895ff-2da4-4169-840c-200499844b58.png)
 
- The example provided was done using the Rust implementation of the libp2p networking stack with a Kubernetes infrastructure. The purpose of this little demo is to show how to implement a p2p network with Kubernetes and libp2p.
+Two [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) where created to accommodate the p2p-app. Which is a Rust application using the [libp2p ping protocol](https://docs.libp2p.io/concepts/introduction/protocols/ping/) to test the connectivity and performance between these two Pods. For each Pod a [container](https://kubernetes.io/docs/concepts/containers/) a [image](https://docs.docker.com/engine/reference/commandline/image/) is created and deployed into the corresponding Pod.
 
 This source code is composed by:
 <ul>
