@@ -10,19 +10,9 @@ For this setup its assume that these software are installed and running:
 
 ## Table of Contents<br>
 <ul>
-<li><a href="https://github.com/gcp-development/event-streaming-platform#kafka-and-kubernetes" target="_self">Dokerfile</a></li>
-<li><a href="https://github.com/gcp-development/event-streaming-platform/blob/main/README.md#blockchain" target="_self">How do we know the Pods IPs?</a></li> 
-<ul>
-<li><a href="https://github.com/gcp-development/event-streaming-platform#block-overview" target="_self">Block Overview</a></li>
-<li><a href="https://github.com/gcp-development/event-streaming-platform#blockchain-overview" target="_self">Blockchain Overview</a></li>
-<li><a href="https://github.com/gcp-development/event-streaming-platform#consensus-mechanism" target="_self">Consensus Mechanism</a></li>
-</ul>
-<li> <a href="https://github.com/gcp-development/event-streaming-platform#implementation" target="_blank">Implementation</a></li>
- <ul>
-  <li><a href="https://github.com/gcp-development/event-streaming-platform#1-run-the-blocks-consumer" target="blank">1) Run the blocks-consumer</a></li>
-  <li><a href="https://github.com/gcp-development/event-streaming-platform#2-run-the-block-processor" target="blank">2) Run the block-processor</a></li>
-  <li><a href="https://github.com/gcp-development/event-streaming-platform#3-run-the-transactions-producer" target="blank">3) Run the transactions-producer</a></li>
- </ul>
+<li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#dockerfile" target="_self">Dokerfile</a></li>
+<li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#pods" target="_self">Pods</a></li>  
+<li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#how-do-we-know-the-pods-ips" target="_self">How do we know the Pods IPs?</a></li> 
 </ul>
 <hr>
 
