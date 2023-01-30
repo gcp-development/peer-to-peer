@@ -13,6 +13,17 @@ Peer to peer networks(P2P) is defined as the group of devices that are connected
 
 Two [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) were created to accommodate the p2p-app. Which is a Rust application using the [libp2p ping protocol](https://docs.libp2p.io/concepts/introduction/protocols/ping/) to test the connectivity and performance between these two Pods. For each Pod a [image](https://docs.docker.com/engine/reference/commandline/image/) is created and deployed into the [container](https://kubernetes.io/docs/concepts/containers/) inside of the corresponding Pod.
 
+Each peer has an identifier, which is generated from its public key. 
+
+The libp2p have two interfaces Advertiser and Discoverer:
+<ul>
+ <li>The Advertiser offers services to the network.</li>
+ <li>The Discoverer is able to find peers.</li>
+</ul>
+
+
+
+
 This source code is composed by:
 <ul>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a>,This project is associate to the Rust application.</li>
