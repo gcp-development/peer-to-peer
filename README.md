@@ -21,7 +21,7 @@ In order to do that we need:
  <li>A register service that is able store SHA256(<a href="https://docs.libp2p.io/concepts/fundamentals/peers/#peer-id">PeerID</a>) in a data structure.<a href="https://docs.ipfs.tech/concepts/dht/#kademlia"> Kademlia Distributed Hash Table.</a></li>
 </ul>
  
-For the example developed, Kubernetes and rust-libp2p was use to create a basic setup for a p2p application. The underlying objective is to leverages the power of P2P networks to provide a shared and trusted ledger of transactions (blockchain technology).
+For the example developed, Kubernetes and rust-libp2p was use to create a basic setup for a p2p application. The underlying objective is to leverages the power of p2p networks to provide a shared and trusted ledger of transactions (blockchain technology).
 
 This source code is composed by:
 <ul>
