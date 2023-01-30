@@ -1,4 +1,4 @@
-# Peer To Peer (Work In Progress)
+# Peer To Peer
 
 ## Motivation
 Peer to Peer networks are fundamental to the blockchain technology, they provide the base layer for a decentralized communication model between two peers , which can communicate with each other without the need for a central server. Using the correct technologies to implement this types of networks is essential for the success of any blockchain solution. As always [Kubernetes](https://kubernetes.io/docs/concepts/overview/), due its scalability and flexibility, is a must associated to a library, like [rust-libp2p](https://github.com/libp2p/rust-libp2p), that can support the requirements of a p2p application.
