@@ -18,7 +18,7 @@ Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/)
 In order to do that we need:
 <ul>
  <li>A discovery service that is able to find peers.<a href="https://github.com/libp2p/specs/blob/master/discovery/mdns.md"> Multicast DNS (mDNS) protocol.</a></li>
- <li>A register service that is able store SHA256(PeerID) in a data structure.<a href="https://docs.ipfs.tech/concepts/dht/#kademlia"> Kademlia Distributed Hash Table.</a></li>
+ <li>A register service that is able store SHA256(<a href="https://docs.libp2p.io/concepts/fundamentals/peers/#peer-id">PeerID</a>) in a data structure.<a href="https://docs.ipfs.tech/concepts/dht/#kademlia"> Kademlia Distributed Hash Table.</a></li>
 </ul>
  
 The libp2p have two interfaces Advertiser and Discoverer:
