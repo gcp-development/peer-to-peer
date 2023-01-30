@@ -17,7 +17,7 @@ Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/)
 
 In order to do that we need:
 <ul>
- <li>A discovery service that are is able to find peers. [Multicast DNS (mDNS) protocol]https://github.com/libp2p/specs/blob/master/discovery/mdns.md)</li>
+ <li>A discovery service that are is able to find peers. <a href="https://github.com/libp2p/specs/blob/master/discovery/mdns.md">Multicast DNS (mDNS) protocol.</a></li>
  <li>A register service that are is able store peers ids in a data structure. [Kademlia Distributed Hash Table](https://docs.ipfs.tech/concepts/dht/#kademlia)</li>
 </ul>
  
