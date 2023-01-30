@@ -17,13 +17,13 @@ Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/)
 
 In order to do that we need:
 <ul>
- <li>A discovery service that are is able to find peers.
- <li>A register service that are is able store peers ids in a data structure.</li>
-<ul>
+ <li>A discovery service that are is able to find peers. (mDNS)</li>
+ <li>A register service that are is able store peers ids in a data structure.(Kademlia Distributed Hash Table)</li>
+</ul>
  
 Every node in the network is uniquely identified through its peer id. 
 
-Each peer has an identifier, which is generated from its public key. The are two main implementations: mDNS and the Kademlia Distributed Hash Table. The Kademlia DHT is used to discover peers in the IPFS network. 
+Each peer has an identifier, which is generated from its public key. The are two main implementations:  and the . The Kademlia DHT is used to discover peers in the IPFS network. 
 
 The libp2p have two interfaces Advertiser and Discoverer:
 <ul>
