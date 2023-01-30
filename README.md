@@ -13,7 +13,17 @@ Peer to peer networks(P2P) is defined as the group of devices that are connected
 
 Two [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) were created to accommodate the p2p-app. Which is a Rust application using the [libp2p ping protocol](https://docs.libp2p.io/concepts/introduction/protocols/ping/) to test the connectivity and performance between these two Pods. For each Pod a [image](https://docs.docker.com/engine/reference/commandline/image/) is created and deployed into the [container](https://kubernetes.io/docs/concepts/containers/) inside of the corresponding Pod.
 
-Each peer has an identifier, which is generated from its public key. 
+Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/), we want to use it to create p2p applications that have no relationship to IPFS at all.
+
+In order to do that we need:
+<ul>
+ <li>A discovery service that are is able to find peers.
+ <li>A register service that are is able store peers ids in a data structure.</li>
+<ul>
+ 
+Every node in the network is uniquely identified through its peer id. 
+
+Each peer has an identifier, which is generated from its public key. The are two main implementations: mDNS and the Kademlia Distributed Hash Table. The Kademlia DHT is used to discover peers in the IPFS network. 
 
 The libp2p have two interfaces Advertiser and Discoverer:
 <ul>
