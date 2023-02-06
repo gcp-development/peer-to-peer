@@ -1,4 +1,4 @@
-# dht application 
+# DHT application 
 
 This Rust application is based in the [distributed-key-value-store example](https://github.com/libp2p/rust-libp2p/blob/master/examples/distributed-key-value-store.rs) for the libp2p. It was developed using the [Intellij Community](https://www.jetbrains.com/idea/download/#section=linux) with the [Rust plugin](https://www.jetbrains.com/rust/).
 
