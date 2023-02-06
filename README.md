@@ -25,17 +25,17 @@ For the example developed, Kubernetes and rust-libp2p was used to create a basic
 
 ### Communication between pods on the same node
 
-A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request. 
+A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request.<br>
 The Multicast DNS (mDNS) protocol can be used in Pods within the same [node](https://kubernetes.io/docs/concepts/architecture/nodes/).
  
 ![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
 
 ### Communication between pods on different nodes
 
-At the cluster level, there’s a table that maps IP address ranges to various nodes. Pods on those nodes will have been assigned IP addresses from those ranges.
+At the cluster level, there’s a table that maps IP address ranges to various nodes. Pods on those nodes will have been assigned IP addresses from those ranges.<br>
+Multicast DNS does not process hostnames with other top-level domains (TLDs). Meaning we will need a implementation like Kademlia that is Scalable and Fault-Tolerant.
 
 ![image](https://user-images.githubusercontent.com/76512851/216921925-85ff702b-690e-4c80-8b07-d8068a34c36c.png)
-Multicast DNS does not process hostnames with other top-level domains (TLDs).
 
 This source code is composed by:
 <ul>
