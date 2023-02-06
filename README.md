@@ -33,7 +33,7 @@ A network bridge connects two networks together. When a request hits the bridge,
  
 ![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
 
-Example for an mDns implementation:
+Example for an mDNS implementation:
 <ul>
   <li><a href="" target="_self">mdns-app</a>, This project is associate to the Rust application.</li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
