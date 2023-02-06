@@ -1,4 +1,4 @@
-# Peer To Peer
+# Peer To Peer (Work In Progress)
 
 ## Motivation
 Peer to Peer networks are fundamental to the blockchain technology, they provide the base layer for a decentralized communication model between two peers , which can communicate with each other without the need for a central server. Using the correct technologies to implement this types of networks is essential for the success of any blockchain solution. As always [Kubernetes](https://kubernetes.io/docs/concepts/overview/), due its scalability and flexibility, is a must. Associated to a library, like [rust-libp2p](https://github.com/libp2p/rust-libp2p), that can support the requirements of a p2p application.
@@ -49,6 +49,12 @@ A [distributed hash table (DHT)](https://docs.ipfs.tech/concepts/dht/) is a dist
 </ul>
 
 There are some fundamental limitations here. If all computers leave at once, we have nowhere to store anything. We will need to replicate keys across different computers so that key-value pairs will be recoverable even if some of those computers leave at once.
+
+This source code is composed by:
+<ul>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/dht-app" target="_self">dht-app</a>, This project is associate to the Rust application.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
+</ul>
 
 <hr>
 
