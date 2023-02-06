@@ -35,6 +35,12 @@ A network bridge connects two networks together. When a request hits the bridge,
  
 ![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
 
+Example for an mDns implementation:
+<ul>
+  <li><a href="" target="_self">mdns-app</a>, This project is associate to the Rust application.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
+</ul>
+
 ### Communication between pods on different nodes
 
 At the cluster level, there’s a table that maps IP address ranges to various nodes. Pods on those nodes will have been assigned IP addresses from those ranges.<br>
