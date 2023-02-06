@@ -18,7 +18,7 @@ Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/)
 In order to do that we need:
 <ul>
  <li>A discovery service that is able to find peers.<a href="https://github.com/libp2p/specs/blob/master/discovery/mdns.md"> Multicast DNS (mDNS) protocol.</a></li>
- <li>A register service that is able store SHA256(<a href="https://docs.libp2p.io/concepts/fundamentals/peers/#peer-id">PeerID</a>) in a data structure.<a href="https://docs.ipfs.tech/concepts/dht/#kademlia"> Kademlia Distributed Hash Table.</a></li>
+ <li>A register service that is able store SHA256(<a href="https://docs.libp2p.io/concepts/fundamentals/peers/#peer-id">PeerID</a>) in a data structure.<a href="https://docs.ipfs.tech/concepts/dht/"> Kademlia Distributed Hash Table.</a></li>
 </ul>
  
 For the example developed, Kubernetes and rust-libp2p was used to create a basic setup for a p2p application. The underlying objective is to leverages the power of p2p networks to provide a shared and trusted ledger of transactions (blockchain technology).
@@ -33,9 +33,15 @@ The Multicast DNS (mDNS) protocol can be used in Pods within the same [node](htt
 ### Communication between pods on different nodes
 
 At the cluster level, there’s a table that maps IP address ranges to various nodes. Pods on those nodes will have been assigned IP addresses from those ranges.<br>
-Multicast DNS does not process hostnames with other top-level domains (TLDs). Meaning we will need a implementation like Kademlia that is Scalable and Fault-Tolerant.
+Multicast DNS does not process hostnames with other top-level domains (TLDs). Meaning we will need a implementation like [Kademlia](https://docs.ipfs.tech/concepts/dht/#kademlia) that is a data structure stored on multiple computers, scalable and fault-tolerant.
 
 ![image](https://user-images.githubusercontent.com/76512851/216921925-85ff702b-690e-4c80-8b07-d8068a34c36c.png)
+
+A [distributed hash table (DHT)](https://docs.ipfs.tech/concepts/dht/) is a distributed system for mapping keys to values:
+<ul>
+ <li>PUT(key, value), which inserts a new element.</li>
+ <li>GET(key), which returns the value of the element corresponding to that key.</li>
+</ul>
 
 This source code is composed by:
 <ul>
