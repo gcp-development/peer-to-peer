@@ -19,8 +19,6 @@ This source code is composed by:
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
 </ul>
 
-For the example developed, Kubernetes and rust-libp2p was used to create a basic setup for a p2p application. The underlying objective is to leverages the power of p2p networks to provide a shared and trusted ledger of transactions (blockchain technology).
-
 Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/), we want to use it to create p2p applications that have no relationship to IPFS at all.
 
 In order to do that we need:
@@ -61,6 +59,10 @@ Example for an mDns/Kademlia(DHT) implementation:
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/dht-app" target="_self">dht-app</a>, This project is associate to the Rust application.</li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
 </ul>
+
+### Conclusion
+
+The underlying objective is to leverages the power of p2p networks via the libp2p-rust to provide a shared and trusted ledger of transactions (blockchain technology).
 
 <hr>
 
