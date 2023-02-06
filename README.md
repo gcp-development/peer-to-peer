@@ -29,6 +29,12 @@ A network bridge connects two networks together. When a request hits the bridge,
 
 ![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
 
+### Communication between pods on different nodes
+
+At the cluster level, there’s a table that maps IP address ranges to various nodes. Pods on those nodes will have been assigned IP addresses from those ranges.
+
+![image](https://user-images.githubusercontent.com/76512851/216921925-85ff702b-690e-4c80-8b07-d8068a34c36c.png)
+
 
 This source code is composed by:
 <ul>
