@@ -33,10 +33,9 @@ The Multicast DNS (mDNS) protocol can be used in Pods within the same [node](htt
 ### Communication between pods on different nodes
 
 At the cluster level, there’s a table that maps IP address ranges to various nodes. Pods on those nodes will have been assigned IP addresses from those ranges.
-Multicast DNS does not process hostnames with other top-level domains (TLDs).
 
 ![image](https://user-images.githubusercontent.com/76512851/216921925-85ff702b-690e-4c80-8b07-d8068a34c36c.png)
-
+Multicast DNS does not process hostnames with other top-level domains (TLDs).
 
 This source code is composed by:
 <ul>
