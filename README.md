@@ -31,8 +31,7 @@ In order to do that we need:
 
 ### Communication between pods on the same node
 
-A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request.<br>
-The Multicast DNS (mDNS) protocol can be used in Pods within the same [node](https://kubernetes.io/docs/concepts/architecture/nodes/).
+A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request. The Multicast DNS (mDNS) protocol can be used in Pods within the same [node](https://kubernetes.io/docs/concepts/architecture/nodes/).
  
 ![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
 
