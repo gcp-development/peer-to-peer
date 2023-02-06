@@ -23,6 +23,13 @@ In order to do that we need:
  
 For the example developed, Kubernetes and rust-libp2p was used to create a basic setup for a p2p application. The underlying objective is to leverages the power of p2p networks to provide a shared and trusted ledger of transactions (blockchain technology).
 
+### Communication between pods on the same node
+
+A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request. 
+
+![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
+
+
 This source code is composed by:
 <ul>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a>, This project is associate to the Rust application.</li>
