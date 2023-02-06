@@ -13,6 +13,12 @@ Peer to peer networks(P2P) is defined as the group of devices that are connected
 
 Two [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) were created to accommodate the p2p-app. Which is a Rust application using the [libp2p ping protocol](https://docs.libp2p.io/concepts/introduction/protocols/ping/) to test the connectivity and performance between these two Pods. For each Pod a [image](https://docs.docker.com/engine/reference/commandline/image/) is created and deployed into the [container](https://kubernetes.io/docs/concepts/containers/) inside of the corresponding Pod.
 
+This source code is composed by:
+<ul>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a>, This project is associate to the Rust application.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
+</ul>
+
 Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/), we want to use it to create p2p applications that have no relationship to IPFS at all.
 
 In order to do that we need:
@@ -41,12 +47,6 @@ A [distributed hash table (DHT)](https://docs.ipfs.tech/concepts/dht/) is a dist
 <ul>
  <li>PUT(key, value), which inserts a new element.</li>
  <li>GET(key), which returns the value of the element corresponding to that key.</li>
-</ul>
-
-This source code is composed by:
-<ul>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a>, This project is associate to the Rust application.</li>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
 </ul>
 
 <hr>
