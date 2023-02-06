@@ -48,6 +48,8 @@ A [distributed hash table (DHT)](https://docs.ipfs.tech/concepts/dht/) is a dist
  <li>GET(key), which returns the value of the element corresponding to that key.</li>
 </ul>
 
+There are some fundamental limitations here. If all computers leave at once, we have nowhere to store anything. We will need to replicate keys across different computers so that key-value pairs will be recoverable even if some of those computers leave at once.
+
 <hr>
 
 ## libp2p
