@@ -19,6 +19,8 @@ This source code is composed by:
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
 </ul>
 
+For the example developed, Kubernetes and rust-libp2p was used to create a basic setup for a p2p application. The underlying objective is to leverages the power of p2p networks to provide a shared and trusted ledger of transactions (blockchain technology).
+
 Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/), we want to use it to create p2p applications that have no relationship to IPFS at all.
 
 In order to do that we need:
@@ -26,8 +28,6 @@ In order to do that we need:
  <li>A discovery service that is able to find peers.<a href="https://github.com/libp2p/specs/blob/master/discovery/mdns.md"> Multicast DNS (mDNS) protocol.</a></li>
  <li>A register service that is able store SHA256(<a href="https://docs.libp2p.io/concepts/fundamentals/peers/#peer-id">PeerID</a>) in a data structure.<a href="https://docs.ipfs.tech/concepts/dht/"> Kademlia Distributed Hash Table.</a></li>
 </ul>
- 
-For the example developed, Kubernetes and rust-libp2p was used to create a basic setup for a p2p application. The underlying objective is to leverages the power of p2p networks to provide a shared and trusted ledger of transactions (blockchain technology).
 
 ### Communication between pods on the same node
 
