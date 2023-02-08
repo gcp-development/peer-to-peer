@@ -9,3 +9,5 @@ spec:
       image: bsilveira1974/p2p-pod-a:1.0
       ports:
         - containerPort: 4242
+    nodeSelector:
+      nodetype=control-plane
