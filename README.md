@@ -46,7 +46,7 @@ At the cluster level, there’s a table that maps IP address ranges to various n
 
 ### Conclusion
 
-The underlying objective is to leverages the power of p2p networks via the libp2p-rust to provide a shared and trusted ledger of transactions (blockchain technology).
+The underlying objective is to leverages the power of p2p networks via the [libp2p-rust](https://github.com/libp2p/rust-libp2p) to provide a shared and trusted ledger of transactions (blockchain technology).
 
 Source code:
 <ul>
