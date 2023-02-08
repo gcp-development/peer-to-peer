@@ -51,11 +51,7 @@ kubectl label nodes minikube-node nodetype=control-plane
 ```
 
 ```bash
-kubectl label nodes minikube-node nodetype=worker
-```
-
-```bash
-kubectl label nodes minikube-node nodetype=worker
+kubectl label nodes minikube-node-m2 nodetype=worker
 ```
 
 ```bash
