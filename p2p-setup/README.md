@@ -25,6 +25,10 @@ For this setup its assume that these software are installed and running:
 minikube start --driver=docker --cpus=4 --memory=8192 --nodes 2 -p minikube-node
 ```
 
+```bash
+kubectl get nodes
+```
+
 ## Dockerfile
 
 ![image](https://user-images.githubusercontent.com/76512851/214598654-10fe08b3-0297-4122-a26f-d12c894f7491.png)
