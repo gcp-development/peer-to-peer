@@ -19,7 +19,7 @@ For this setup its assume that these software are installed and running:
 
 ## minikube setup
 
-![image](https://user-images.githubusercontent.com/76512851/217583117-39f422e6-6bac-45ec-b300-9bba1ec8b162.png)
+![image](https://user-images.githubusercontent.com/76512851/217585412-3467872a-4101-4453-9c9e-34ec32402ca1.png)
 
 ```bash
 minikube start --driver=docker --cpus=4 --memory=8192 --nodes 2 -p minikube-node
