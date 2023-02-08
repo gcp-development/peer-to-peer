@@ -77,6 +77,5 @@ The libp2p interface acts as a thin veneer over a multitude of subsystems that a
 <hr>
 
 References:<br>
+[Rust libp2p](https://github.com/libp2p/rust-libp2p)
 [libp2p documentation](https://docs.libp2p.io/concepts/introduction/overview/)<br>
-
-
