@@ -32,7 +32,19 @@ Where the pods IPs are defined.
 
 ![image](https://user-images.githubusercontent.com/76512851/214858437-b54f1b3f-ed59-48cb-b593-594285527c59.png)
 
-Note: to know the pods ips please go [here](https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#how-do-we-know-the-pods-ips)
+How do we know the Pods IPs?
+
+```bash
+kubectl get po --all-namespaces -o wide
+```
+
+![image](https://user-images.githubusercontent.com/76512851/214622104-04577d9a-8db7-442c-b3c4-acb17429b1b5.png)
+
+The kube-system (coredns-565d847f94-srfc5) is responsible to create [DNS records](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/) for [Services](https://minikube.sigs.k8s.io/docs/commands/service/) and [Pods](https://kubernetes.io/docs/concepts/workloads/pods/). And it will consume the first IP available in the [minikube node](https://minikube.sigs.k8s.io/docs/commands/node/#minikube-node).
+
+Whit this information is very easy to preview which IPs will be available for the pods. In ours case 172.17.0.3 and 172.17.0.4.
+
+Note: assigning a Pod a static IP address is an anti-pattern in Kubernetes environments. This example is only for demonstrative purposes.
 
 <hr>
 
