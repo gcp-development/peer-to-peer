@@ -33,6 +33,24 @@ kubectl get nodes
 
 ![image](https://user-images.githubusercontent.com/76512851/217586844-d342c20e-76a0-46e3-a4fa-e63f0a94ed6a.png)
 
+```bash
+kubectl label nodes minikube-node nodetype=control-plane
+```
+
+```bash
+kubectl label nodes minikube-node nodetype=worker
+```
+
+```bash
+kubectl label nodes minikube-node nodetype=worker
+```
+
+```bash
+kubectl get nodes --show-labels
+```
+
+![image](https://user-images.githubusercontent.com/76512851/217620938-634d61ca-31c4-45a3-9967-8b68c6e52e9e.png)
+
 ## Scenario p2p-app
 
 ### Dockerfile
