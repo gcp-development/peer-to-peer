@@ -33,6 +33,7 @@ kubectl get nodes
 
 ![image](https://user-images.githubusercontent.com/76512851/217586844-d342c20e-76a0-46e3-a4fa-e63f0a94ed6a.png)
 
+Add [labels](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/#add-a-label-to-a-node) to both nodes.
 ```bash
 kubectl label nodes minikube-node nodetype=control-plane
 ```
