@@ -29,6 +29,9 @@ minikube start --driver=docker --cpus=4 --memory=8192 --nodes 2 -p minikube-node
 kubectl get nodes
 ```
 
+![image](https://user-images.githubusercontent.com/76512851/217586844-d342c20e-76a0-46e3-a4fa-e63f0a94ed6a.png)
+
+
 ## Dockerfile
 
 ![image](https://user-images.githubusercontent.com/76512851/214598654-10fe08b3-0297-4122-a26f-d12c894f7491.png)
