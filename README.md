@@ -13,7 +13,7 @@ Peer to peer networks(P2P) is defined as the group of devices that are connected
 
 Two [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) were created to accommodate the p2p-app. Which is a Rust application using the [libp2p ping protocol](https://docs.libp2p.io/concepts/introduction/protocols/ping/) to test the connectivity and performance between these two Pods. For each Pod a [image](https://docs.docker.com/engine/reference/commandline/image/) is created and deployed into the [container](https://kubernetes.io/docs/concepts/containers/) inside of the corresponding Pod.
 
-This source code is composed by:
+For the ping example:
 <ul>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a>, This project is associate to the Rust application.</li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
@@ -33,7 +33,7 @@ A network bridge connects two networks together. When a request hits the bridge,
  
 ![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
 
-Example for an mDNS implementation:
+For the mDNS example:
 <ul>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/mdns-app" target="_self">mdns-app</a>, This project is associate to the Rust application.</li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
@@ -54,7 +54,7 @@ A [distributed hash table (DHT)](https://docs.ipfs.tech/concepts/dht/) is a dist
 
 There are some fundamental limitations here. If all computers leave at once, we have nowhere to store anything. We will need to replicate keys across different computers so that key-value pairs will be recoverable even if some of those computers leave at once.
 
-Example for an mDNS/Kademlia(DHT) implementation:
+For the mDNS/Kademlia(DHT) example:
 <ul>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/dht-app" target="_self">dht-app</a>, This project is associate to the Rust application.</li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
