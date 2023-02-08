@@ -16,12 +16,12 @@ For this setup its assume that these software are installed and running:
     <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#dockerfile" target="_self">Dokerfile</a></li>
     <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#pods" target="_self">Pods</a></li>
   </ul>
-  <ii>mdns-app</li>
+  <li>mdns-app</li>
   <ul>
     <li>Dokerfile</li>
     <li>Pods</li>
   </ul>
-  <ii>dht-app</li>
+  <li>dht-app</li>
   <ul>
     <li>Dokerfile</li>
     <li>Pods</li>
