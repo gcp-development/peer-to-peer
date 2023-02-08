@@ -1,8 +1,8 @@
 use futures::StreamExt;
 use libp2p::{
-     identity,
+    identity,
     mdns,
-     swarm::SwarmEvent,
+    swarm::SwarmEvent,
     PeerId,
     Swarm,
 };
