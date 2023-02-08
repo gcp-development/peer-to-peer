@@ -111,9 +111,17 @@ kubectl logs -f pod-b --namespace=peer-to-peer-platform
 
 ## Scenario mdns-app
 
+### Dockerfile
+
+### Pods
+
 <hr>
 
 ## Scenario dht-app
+
+### Dockerfile
+
+### Pods
 
 <hr>
 
