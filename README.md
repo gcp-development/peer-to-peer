@@ -21,7 +21,7 @@ In order to do that we need:
  <li>A register service that is able store SHA256(<a href="https://docs.libp2p.io/concepts/fundamentals/peers/#peer-id">PeerID</a>) in a data structure.<a href="https://docs.ipfs.tech/concepts/dht/"> Kademlia Distributed Hash Table.</a></li>
 </ul>
 
-The Multicast DNS (mDNS) protocol can be used in Pods within the same [node](https://kubernetes.io/docs/concepts/architecture/nodes/).
+The Multicast DNS (mDNS) protocol can be used in local networks (Pods within the same [node](https://kubernetes.io/docs/concepts/architecture/nodes/)).
 Multicast DNS (mDNS) does not process hostnames with other top-level domains (TLDs). Meaning we will need a implementation like [Kademlia](https://docs.ipfs.tech/concepts/dht/#kademlia) that is a data structure stored on multiple computers, scalable and fault-tolerant.
 
 A [distributed hash table (DHT)](https://docs.ipfs.tech/concepts/dht/) is a distributed system for mapping keys to values:
