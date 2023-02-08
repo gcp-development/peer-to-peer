@@ -11,7 +11,7 @@ For this setup its assume that these software are installed and running:
 ## Table of Contents<br>
 <ul>
   <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/p2p-setup/README.md#minikube-setup" target="_self">minikube setup</a></li>
-  <ii>p2p-app</li>
+  <li>p2p-app</li>
   <ul>
     <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#dockerfile" target="_self">Dokerfile</a></li>
     <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#pods" target="_self">Pods</a></li>
