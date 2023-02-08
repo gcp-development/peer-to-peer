@@ -18,13 +18,13 @@ For this setup its assume that these software are installed and running:
   </ul>
   <ii>mdns-app</li>
   <ul>
-    <li></li>
-    <li></li>
+    <li>Dokerfile</li>
+    <li>Pods</li>
   </ul>
   <ii>dht-app</li>
   <ul>
-    <li></li>
-    <li></li>
+    <li>Dokerfile</li>
+    <li>Pods</li>
   </ul>
 </ul>
 <hr>
