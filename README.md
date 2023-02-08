@@ -50,10 +50,10 @@ The underlying objective is to leverages the power of p2p networks via the libp2
 
 Source code:
 <ul>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a>ping example.</li>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/mdns-app" target="_self">mdns-app</a>mDNS example.</li>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/dht-app" target="_self">dht-app</a>mDNS/Kademlia(DHT) example.</li>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>Kubernetes setup.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a> ping example.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/mdns-app" target="_self">mdns-app</a> mDNS example.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/dht-app" target="_self">dht-app</a> mDNS/Kademlia(DHT) example.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a> Kubernetes setup.</li>
 </ul>
 
 <hr>
