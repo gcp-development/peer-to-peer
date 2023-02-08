@@ -13,12 +13,6 @@ Peer to peer networks(P2P) is defined as the group of devices that are connected
 
 Two [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) were created to accommodate the p2p-app. Which is a Rust application using the [libp2p ping protocol](https://docs.libp2p.io/concepts/introduction/protocols/ping/) to test the connectivity and performance between these two Pods. For each Pod a [image](https://docs.docker.com/engine/reference/commandline/image/) is created and deployed into the [container](https://kubernetes.io/docs/concepts/containers/) inside of the corresponding Pod.
 
-For the ping example:
-<ul>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a>, This project is associate to the Rust application.</li>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
-</ul>
-
 Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/), we want to use it to create p2p applications that have no relationship to IPFS at all.
 
 In order to do that we need:
@@ -27,24 +21,8 @@ In order to do that we need:
  <li>A register service that is able store SHA256(<a href="https://docs.libp2p.io/concepts/fundamentals/peers/#peer-id">PeerID</a>) in a data structure.<a href="https://docs.ipfs.tech/concepts/dht/"> Kademlia Distributed Hash Table.</a></li>
 </ul>
 
-### Communication between pods on the same node
-
-A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request. The Multicast DNS (mDNS) protocol can be used in Pods within the same [node](https://kubernetes.io/docs/concepts/architecture/nodes/).
- 
-![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
-
-For the mDNS example:
-<ul>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/mdns-app" target="_self">mdns-app</a>, This project is associate to the Rust application.</li>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
-</ul>
-
-### Communication between pods on different nodes
-
-At the cluster level, there’s a table that maps IP address ranges to various nodes. Pods on those nodes will have been assigned IP addresses from those ranges.<br>
+The Multicast DNS (mDNS) protocol can be used in Pods within the same [node](https://kubernetes.io/docs/concepts/architecture/nodes/).
 Multicast DNS does not process hostnames with other top-level domains (TLDs). Meaning we will need a implementation like [Kademlia](https://docs.ipfs.tech/concepts/dht/#kademlia) that is a data structure stored on multiple computers, scalable and fault-tolerant.
-
-![image](https://user-images.githubusercontent.com/76512851/216921925-85ff702b-690e-4c80-8b07-d8068a34c36c.png)
 
 A [distributed hash table (DHT)](https://docs.ipfs.tech/concepts/dht/) is a distributed system for mapping keys to values:
 <ul>
@@ -54,15 +32,29 @@ A [distributed hash table (DHT)](https://docs.ipfs.tech/concepts/dht/) is a dist
 
 There are some fundamental limitations here. If all computers leave at once, we have nowhere to store anything. We will need to replicate keys across different computers so that key-value pairs will be recoverable even if some of those computers leave at once.
 
-For the mDNS/Kademlia(DHT) example:
-<ul>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/dht-app" target="_self">dht-app</a>, This project is associate to the Rust application.</li>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>, This project is associate to the Kubernetes setup.</li>
-</ul>
+### Communication between pods on the same node
+
+A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request. 
+ 
+![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
+
+### Communication between pods on different nodes
+
+At the cluster level, there’s a table that maps IP address ranges to various nodes. Pods on those nodes will have been assigned IP addresses from those ranges.<br>
+
+![image](https://user-images.githubusercontent.com/76512851/216921925-85ff702b-690e-4c80-8b07-d8068a34c36c.png)
 
 ### Conclusion
 
 The underlying objective is to leverages the power of p2p networks via the libp2p-rust to provide a shared and trusted ledger of transactions (blockchain technology).
+
+Source code:
+<ul>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a>ping example.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/mdns-app" target="_self">mdns-app</a>mDNS example.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/dht-app" target="_self">dht-app</a>mDNS/Kademlia(DHT) example.</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup" target="_self">p2p-setup</a>Kubernetes setup.</li>
+</ul>
 
 <hr>
 
