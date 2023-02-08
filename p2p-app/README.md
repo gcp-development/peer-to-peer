@@ -42,7 +42,7 @@ kubectl get po --all-namespaces -o wide
 
 The kube-system (coredns-565d847f94-srfc5) is responsible to create [DNS records](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/) for [Services](https://minikube.sigs.k8s.io/docs/commands/service/) and [Pods](https://kubernetes.io/docs/concepts/workloads/pods/). And it will consume the first IP available in the [minikube node](https://minikube.sigs.k8s.io/docs/commands/node/#minikube-node).
 
-Whit this information is very easy to preview which IPs will be available for the pods. In ours case 172.17.0.3 and 172.17.0.4.
+With this information is very easy to preview which IPs will be available for the pods. In ours case 172.17.0.3 and 172.17.0.4.
 
 Note: assigning a Pod a static IP address is an anti-pattern in Kubernetes environments. This example is only for demonstrative purposes.
 
@@ -53,4 +53,3 @@ References:<br>
 [identify protocol](https://github.com/libp2p/specs/blob/master/identify/README.md)<br>
 [Peer Ids and Keys](https://github.com/libp2p/specs/blob/master/peer-ids/peer-ids.md)<br>
 [Addressing in libp2p ](https://github.com/libp2p/specs/blob/master/addressing/README.md)<br>
-[Rust libp2p](https://github.com/libp2p/rust-libp2p)
