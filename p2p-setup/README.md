@@ -33,7 +33,7 @@ kubectl get nodes
 
 ![image](https://user-images.githubusercontent.com/76512851/217586844-d342c20e-76a0-46e3-a4fa-e63f0a94ed6a.png)
 
-## Scenario p2p-app 
+## Scenario p2p-app
 
 ### Dockerfile
 
@@ -106,6 +106,14 @@ kubectl logs -f pod-b --namespace=peer-to-peer-platform
 ```
 
 ![image](https://user-images.githubusercontent.com/76512851/214621152-36dd79a8-8007-4509-a56e-8bdc0678bf66.png)
+
+<hr>
+
+## Scenario mdns-app
+
+<hr>
+
+## Scenario dht-app
 
 <hr>
 
