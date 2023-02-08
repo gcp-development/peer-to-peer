@@ -10,11 +10,17 @@ For this setup its assume that these software are installed and running:
 
 ## Table of Contents<br>
 <ul>
+<li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#dockerfile" target="_self">minikube setup</a></li>
 <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#dockerfile" target="_self">Dokerfile</a></li>
 <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#pods" target="_self">Pods</a></li>  
 <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#how-do-we-know-the-pods-ips" target="_self">How do we know the Pods IPs?</a></li> 
 </ul>
 <hr>
+
+## minikube setup
+
+![image](https://user-images.githubusercontent.com/76512851/217583117-39f422e6-6bac-45ec-b300-9bba1ec8b162.png)
+
 
 ## Dockerfile
 
