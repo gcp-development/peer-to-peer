@@ -21,6 +21,8 @@ For this setup its assume that these software are installed and running:
 
 ![image](https://user-images.githubusercontent.com/76512851/217585412-3467872a-4101-4453-9c9e-34ec32402ca1.png)
 
+Minikube setup with [two nodes](https://minikube.sigs.k8s.io/docs/tutorials/multi_node/).
+
 ```bash
 minikube start --driver=docker --cpus=4 --memory=8192 --nodes 2 -p minikube-node
 ```
@@ -31,8 +33,9 @@ kubectl get nodes
 
 ![image](https://user-images.githubusercontent.com/76512851/217586844-d342c20e-76a0-46e3-a4fa-e63f0a94ed6a.png)
 
+## Scenario p2p-app 
 
-## Dockerfile
+### Dockerfile
 
 ![image](https://user-images.githubusercontent.com/76512851/214598654-10fe08b3-0297-4122-a26f-d12c894f7491.png)
 
@@ -71,7 +74,7 @@ docker push {docker.hub}/p2p-pod-b:1.0
 
 <hr>
 
-## Pods
+### Pods
 
 ![image](https://user-images.githubusercontent.com/76512851/214600031-fd6627f0-f848-461a-9555-6f0b113a3bb8.png)
 
