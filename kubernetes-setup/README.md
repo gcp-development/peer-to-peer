@@ -32,6 +32,8 @@ It's assumed that these software are installed and running:
 
 ## minikube setup
 
+minikube version
+
 ![image](https://user-images.githubusercontent.com/76512851/217585412-3467872a-4101-4453-9c9e-34ec32402ca1.png)
 
 Minikube setup with [two nodes](https://minikube.sigs.k8s.io/docs/tutorials/multi_node/).
