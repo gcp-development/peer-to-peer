@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-b
+  namespace: peer-to-peer-platform
+spec:
+  nodeSelector:
+    nodetype: control-plane
+  containers:
+    - name: container-a
+      image: bsilveira1974/mdns-app:1.0
+      imagePullPolicy: IfNotPresent
+    - name: container-b
+      image: bsilveira1974/mdns-app:1.0
+      imagePullPolicy: IfNotPresent

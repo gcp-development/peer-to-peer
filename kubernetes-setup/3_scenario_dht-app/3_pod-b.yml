@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-b
+  namespace: peer-to-peer-platform
+spec:
+  containers:
+    - name: pod-b
+      image: bsilveira1974/p2p-pod-b:1.0
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 4242
+    nodeSelector:
+      nodetype=control-plane

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-a
+  namespace: peer-to-peer-platform
+spec:
+  containers:
+    - name: pod-a
+      image: bsilveira1974/p2p-pod-a:1.0
+      ports:
+        - containerPort: 4242
+    nodeSelector:
+      nodetype=control-plane
