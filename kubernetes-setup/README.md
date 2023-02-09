@@ -83,10 +83,24 @@ docker push {docker.hub}/mdns-app:1.0
 
 ### Pods
 
-
 ```bash
 kubectl apply -f 1_namespace.yml
 ```
 Note: to list the namespaces just run "kubectl get namespaces"
+
+![image](https://user-images.githubusercontent.com/76512851/217919434-fd6201fb-e75c-4b43-a480-057119532af0.png)
+
+```bash
+kubectl apply -f 2_pod-a.yml
+```
+
+```bash
+kubectl apply -f 3_pod-b.yml
+```
+
+```bash
+kubectl get pods --namespace=peer-to-peer-platform
+```
+
 
 <hr>
