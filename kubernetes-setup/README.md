@@ -20,7 +20,7 @@ It's assumed that these software are installed and running:
   <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-mdns-app">Scenario mdns-app</a></li>
   <ul>
     <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#dockerfile" target="_self">Dokerfile</a></li>
-    <li>Pods</li>
+    <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#pods" target="_self">Pods</a></li>
   </ul>
   <li>dht-app</li>
   <ul>
