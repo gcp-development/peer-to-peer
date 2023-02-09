@@ -104,11 +104,14 @@ kubectl get pod -o wide --namespace=peer-to-peer-platform
 
 ![image](https://user-images.githubusercontent.com/76512851/217921445-43279fa5-fdbd-4261-93c2-d3ce1e4fe142.png)
 
+Verify the logs for the container "container-a" inside of the pod "pod-a".
 ```bash
 kubectl logs pod-a -c container-a  --namespace=peer-to-peer-platform
 ```
 
 ![image](https://user-images.githubusercontent.com/76512851/217921067-33107029-5a88-4db3-b8d4-5e0b8d6f955e.png)
+
+Verify the logs for the container "container-b" inside of the pod "pod-a".
 
 ```bash
 kubectl logs pod-a -c container-b  --namespace=peer-to-peer-platform
@@ -117,8 +120,10 @@ kubectl logs pod-a -c container-b  --namespace=peer-to-peer-platform
 ![image](https://user-images.githubusercontent.com/76512851/217922598-087eaf74-e47d-4233-80ff-7a709137dfa7.png)
 
 
-
-
+Delete all resources belonging to the namespace.
+```bash
+kubectl delete namespace peer-to-peer-platform
+```
 
 
 <hr>
