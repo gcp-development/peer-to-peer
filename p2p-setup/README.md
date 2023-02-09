@@ -1,35 +1,6 @@
 
 
-## minikube setup
 
-![image](https://user-images.githubusercontent.com/76512851/217585412-3467872a-4101-4453-9c9e-34ec32402ca1.png)
-
-Minikube setup with [two nodes](https://minikube.sigs.k8s.io/docs/tutorials/multi_node/).
-
-```bash
-minikube start --driver=docker --cpus=4 --memory=8192 --nodes 2 -p minikube-node
-```
-
-```bash
-kubectl get nodes
-```
-
-![image](https://user-images.githubusercontent.com/76512851/217586844-d342c20e-76a0-46e3-a4fa-e63f0a94ed6a.png)
-
-Add [labels](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/#add-a-label-to-a-node) to both nodes.
-```bash
-kubectl label nodes minikube-node nodetype=control-plane
-```
-
-```bash
-kubectl label nodes minikube-node-m02 nodetype=worker
-```
-
-```bash
-kubectl get nodes --show-labels
-```
-
-![image](https://user-images.githubusercontent.com/76512851/217620938-634d61ca-31c4-45a3-9967-8b68c6e52e9e.png)
 
 ## Scenario p2p-app
 
@@ -106,30 +77,6 @@ kubectl logs -f pod-b --namespace=peer-to-peer-platform
 ![image](https://user-images.githubusercontent.com/76512851/214621152-36dd79a8-8007-4509-a56e-8bdc0678bf66.png)
 
 <hr>
-
-## Scenario mdns-app
-
-### Dockerfile
-
-```bash
-docker build -f /peer-to-peer/kubernetes-setup/2_scenario_mdns-app/mdns-app-dockerfile.dev -t mdns-app:1.0 .
-```
-
-```bash
-docker tag mdns-app:1.0 {docker.hub}/mdns-app:1.0
-```
-
-```bash
-docker push {docker.hub}/mdns-app:1.0
-```
-
-### Pods
-
-
-```bash
-kubectl apply -f 1_namespace.yml
-```
-Note: to list the namespaces just run "kubectl get namespaces"
 
 
 
