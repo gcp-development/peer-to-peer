@@ -102,5 +102,6 @@ kubectl apply -f 3_pod-b.yml
 kubectl get pods --namespace=peer-to-peer-platform
 ```
 
+![image](https://user-images.githubusercontent.com/76512851/217920543-cde780d5-2c9e-4097-acfd-c3c5d8bdb373.png)
 
 <hr>
