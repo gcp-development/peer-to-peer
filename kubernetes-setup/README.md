@@ -67,6 +67,10 @@ kubectl get nodes --show-labels
 
 ## Scenario mdns-app
 
+For this scenario we are going to create a node with two pods. Each pod will have two containers. The mDNS protocol can only discover devices in the local network inside of the pod. 
+
+![image](https://user-images.githubusercontent.com/76512851/217934985-62b1ce28-82fe-4845-bf4b-32eb96bb2cdf.png)
+
 ### Dockerfile
 
 ```bash
