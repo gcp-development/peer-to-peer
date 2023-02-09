@@ -29,6 +29,7 @@ It's assumed that these software are installed and running:
   </ul>
 </ul>
 <hr>
+
 ## minikube setup
 
 ![image](https://user-images.githubusercontent.com/76512851/217585412-3467872a-4101-4453-9c9e-34ec32402ca1.png)
@@ -59,3 +60,5 @@ kubectl get nodes --show-labels
 ```
 
 ![image](https://user-images.githubusercontent.com/76512851/217620938-634d61ca-31c4-45a3-9967-8b68c6e52e9e.png)
+
+<hr>
