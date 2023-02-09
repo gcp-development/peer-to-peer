@@ -140,7 +140,27 @@ kubectl logs -f pod-b --namespace=peer-to-peer-platform
 
 ### Dockerfile
 
+```bash
+docker build -f /peer-to-peer/kubernetes-setup/2_scenario_mdns-app/mdns-app-dockerfile.dev -t mdns-app:1.0 .
+```
+
+```bash
+docker tag mdns-app:1.0 {docker.hub}/mdns-app:1.0
+```
+
+```bash
+docker push {docker.hub}/mdns-app:1.0
+```
+
 ### Pods
+
+
+```bash
+kubectl apply -f 1_namespace.yml
+```
+Note: to list the namespaces just run "kubectl get namespaces"
+
+
 
 <hr>
 
