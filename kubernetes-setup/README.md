@@ -119,6 +119,17 @@ kubectl logs pod-a -c container-b  --namespace=peer-to-peer-platform
 
 ![image](https://user-images.githubusercontent.com/76512851/217922598-087eaf74-e47d-4233-80ff-7a709137dfa7.png)
 
+```bash
+kubectl logs pod-b -c container-a  --namespace=peer-to-peer-platform
+```
+
+![image](https://user-images.githubusercontent.com/76512851/217924430-b1a5ee3e-b00f-42d0-9609-a9f7812c5b5a.png)
+
+```bash
+kubectl logs pod-b -c container-b  --namespace=peer-to-peer-platform
+```
+
+![image](https://user-images.githubusercontent.com/76512851/217924917-4f78508c-8c2a-4119-b831-a5f31590abed.png)
 
 Delete all resources belonging to the namespace.
 ```bash
