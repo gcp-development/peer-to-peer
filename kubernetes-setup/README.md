@@ -90,9 +90,13 @@ Note: to list the namespaces just run "kubectl get namespaces"
 
 ![image](https://user-images.githubusercontent.com/76512851/217919434-fd6201fb-e75c-4b43-a480-057119532af0.png)
 
+Create a pod "pod-a" with two containers "container-a" & "container-b".
+
 ```bash
 kubectl apply -f 2_pod-a.yml
 ```
+
+Create a pod "pod-b" with two containers "container-a" & "container-b".
 
 ```bash
 kubectl apply -f 3_pod-b.yml
@@ -119,11 +123,15 @@ kubectl logs pod-a -c container-b  --namespace=peer-to-peer-platform
 
 ![image](https://user-images.githubusercontent.com/76512851/217922598-087eaf74-e47d-4233-80ff-7a709137dfa7.png)
 
+Verify the logs for the container "container-a" inside of the pod "pod-b".
+
 ```bash
 kubectl logs pod-b -c container-a  --namespace=peer-to-peer-platform
 ```
 
 ![image](https://user-images.githubusercontent.com/76512851/217924430-b1a5ee3e-b00f-42d0-9609-a9f7812c5b5a.png)
+
+Verify the logs for the container "container-b" inside of the pod "pod-b".
 
 ```bash
 kubectl logs pod-b -c container-b  --namespace=peer-to-peer-platform
