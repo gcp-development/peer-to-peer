@@ -23,3 +23,4 @@ cargo clean
 <hr>
 
 References:<br>
+[Multicast DNS](https://datatracker.ietf.org/doc/html/rfc6762)<br>
