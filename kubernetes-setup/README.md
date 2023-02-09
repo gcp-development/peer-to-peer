@@ -64,3 +64,29 @@ kubectl get nodes --show-labels
 ![image](https://user-images.githubusercontent.com/76512851/217620938-634d61ca-31c4-45a3-9967-8b68c6e52e9e.png)
 
 <hr>
+
+## Scenario mdns-app
+
+### Dockerfile
+
+```bash
+docker build -f /peer-to-peer/kubernetes-setup/2_scenario_mdns-app/mdns-app-dockerfile.dev -t mdns-app:1.0 .
+```
+
+```bash
+docker tag mdns-app:1.0 {docker.hub}/mdns-app:1.0
+```
+
+```bash
+docker push {docker.hub}/mdns-app:1.0
+```
+
+### Pods
+
+
+```bash
+kubectl apply -f 1_namespace.yml
+```
+Note: to list the namespaces just run "kubectl get namespaces"
+
+<hr>
