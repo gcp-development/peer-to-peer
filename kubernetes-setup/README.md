@@ -17,7 +17,7 @@ It's assumed that these software are installed and running:
     <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#dockerfile" target="_self">Dokerfile</a></li>
     <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#pods" target="_self">Pods</a></li>
   </ul>
-  <li>mdns-app</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-mdns-app">>mdns-app</a</li>
   <ul>
     <li>Dokerfile</li>
     <li>Pods</li>
