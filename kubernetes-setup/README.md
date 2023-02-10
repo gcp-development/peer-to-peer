@@ -154,7 +154,26 @@ kubectl delete namespace peer-to-peer-platform
 
 ### Dockerfile
 
+```bash
+docker build -f /peer-to-peer/kubernetes-setup/3_scenario_dht-app/dht-app-dockerfile.dev -t dht-app:1.0 .
+```
+
+```bash
+docker tag mdns-app:1.0 {docker.hub}/dht-app:1.0
+```
+
+```bash
+docker push {docker.hub}/dht-app:1.0
+```
+
 ### Pods
+
+```bash
+kubectl apply -f 1_namespace.yml
+```
+Note: to list the namespaces just run "kubectl get namespaces"
+
+![image](https://user-images.githubusercontent.com/76512851/217919434-fd6201fb-e75c-4b43-a480-057119532af0.png)
 
 <hr>
 
