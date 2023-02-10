@@ -24,3 +24,4 @@ cargo clean
 
 References:<br>
 [Multicast DNS](https://datatracker.ietf.org/doc/html/rfc6762)<br>
+[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)<br>
