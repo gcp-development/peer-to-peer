@@ -157,3 +157,10 @@ kubectl delete namespace peer-to-peer-platform
 ### Pods
 
 <hr>
+
+References:
+
+[Dockerfile reference](https://docs.docker.com/engine/reference/builder/)<br>
+[minikube](https://minikube.sigs.k8s.io/docs/)<br>
+[Kubernetes Documentation](https://kubernetes.io/docs/home/)<br>
+[Rust Official Image](https://hub.docker.com/_/rust)
