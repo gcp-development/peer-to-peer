@@ -39,7 +39,7 @@ minikube version
 Minikube setup with [two nodes](https://minikube.sigs.k8s.io/docs/tutorials/multi_node/).
 
 ```bash
-minikube start --driver=docker --cpus=4 --memory=8192 --nodes 2 -p minikube-node
+minikube start --driver=docker --cpus=4 --nodes 2 -p minikube-node
 ```
 
 ```bash
