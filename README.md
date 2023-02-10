@@ -52,7 +52,7 @@ Source code:
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-app" target="_self">p2p-app</a> ping example.</li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/mdns-app" target="_self">mdns-app</a> mDNS example.</li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/dht-app" target="_self">dht-app</a> mDNS/Kademlia(DHT) example.</li>
-  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/kubernetes-setup" target="_self">Kubernetes setup.</a></li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/kubernetes-setup" target="_self">kubernetes-setup</a>Kubernetes setup.</li>
 </ul>
 
 <hr>
