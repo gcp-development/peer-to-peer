@@ -148,5 +148,12 @@ Delete all resources belonging to the namespace.
 kubectl delete namespace peer-to-peer-platform
 ```
 
+<hr>
+
+## Scenario dht-app
+
+### Dockerfile
+
+### Pods
 
 <hr>
