@@ -168,12 +168,23 @@ docker push {docker.hub}/dht-app:1.0
 
 ### Pods
 
+
 ```bash
 kubectl apply -f 1_namespace.yml
 ```
 Note: to list the namespaces just run "kubectl get namespaces"
 
 ![image](https://user-images.githubusercontent.com/76512851/217919434-fd6201fb-e75c-4b43-a480-057119532af0.png)
+
+```bash
+kubectl apply -f 2_pod-a.yml
+```
+Note:HostNetwork allows a pod to use the node network namespace.This is done to allow the mDNS to discover all other pods in the node. This is not a [best practice](https://kubernetes.io/docs/concepts/configuration/overview/) and is used only for demonstration proposes.
+
+```bash
+kubectl apply -f 3_pod-b.yml
+```
+
 
 <hr>
 
