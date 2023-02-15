@@ -178,15 +178,30 @@ Note: to list the namespaces just run "kubectl get namespaces"
 
 ![image](https://user-images.githubusercontent.com/76512851/217919434-fd6201fb-e75c-4b43-a480-057119532af0.png)
 
+Create a pod "pod-a" with one container "container-a".
+
 ```bash
 kubectl apply -f 2_pod-a.yml
 ```
 Note:HostNetwork allows a pod to use the node network namespace.This is done to allow the mDNS to discover all other pods in the node. This is not a [best practice](https://kubernetes.io/docs/concepts/configuration/overview/) and is used only for demonstration proposes.
 
+Create a pod "pod-b" with one container "container-a".
+
 ```bash
 kubectl apply -f 3_pod-b.yml
 ```
 
+Create a pod "pod-c" with one container "container-a".
+
+```bash
+kubectl apply -f 4_pod-c.yml
+```
+
+Create a pod "pod-d" with one container "container-a".
+
+```bash
+kubectl apply -f 5_pod-d.yml
+```
 
 <hr>
 
