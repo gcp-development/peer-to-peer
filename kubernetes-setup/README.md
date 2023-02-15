@@ -229,6 +229,11 @@ kubectl exec -it pod-c --namespace=peer-to-peer-platform -- /bin/bash
 ```
 ![image](https://user-images.githubusercontent.com/76512851/219112492-f8c308f7-dd5d-40cc-a321-ed5d37ba8ae3.png)
 
+Delete all resources belonging to the namespace.
+```bash
+kubectl delete namespace peer-to-peer-platform
+```
+
 <hr>
 
 References:
