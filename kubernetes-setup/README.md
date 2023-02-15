@@ -219,6 +219,11 @@ kubectl exec -it pod-d --namespace=peer-to-peer-platform -- /bin/bash
 ```
 ![image](https://user-images.githubusercontent.com/76512851/219100821-0b996a94-defc-4ef8-9543-c8138eb38876.png)
 
+```bash
+kubectl exec -it pod-b --namespace=peer-to-peer-platform -- /bin/bash
+```
+![image](https://user-images.githubusercontent.com/76512851/219108166-ca110ab8-7c27-4364-bcd4-4e5b83c068cd.png)
+
 <hr>
 
 References:
