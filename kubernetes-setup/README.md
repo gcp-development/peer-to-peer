@@ -212,6 +212,9 @@ kubectl get pods -o wide --namespace=peer-to-peer-platform
 kubectl exec -it pod-a --namespace=peer-to-peer-platform -- /bin/bash
 ```
 
+![image](https://user-images.githubusercontent.com/76512851/219097457-500341a0-777a-426f-81d5-d5b63da70d20.png)
+
+
 <hr>
 
 References:
