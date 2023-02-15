@@ -45,7 +45,8 @@ minikube start --driver=docker --nodes 2 -p demo
 ```bash
 kubectl get nodes
 ```
-![image](https://user-images.githubusercontent.com/76512851/219067571-4a184c2c-b1cb-4e45-8853-412be3a2a64e.png)
+
+![image](https://user-images.githubusercontent.com/76512851/219067968-88c9c1ac-849f-463f-b679-e1181020d9f9.png)
 
 Add [labels](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/#add-a-label-to-a-node) to both nodes.
 
@@ -60,8 +61,7 @@ kubectl label nodes demo-m02 nodelabel=node-02
 ```bash
 kubectl get nodes --show-labels
 ```
-
-![image](https://user-images.githubusercontent.com/76512851/219061525-eacfc396-6789-4b2a-abad-1ab4fc2125ba.png)
+![image](https://user-images.githubusercontent.com/76512851/219067571-4a184c2c-b1cb-4e45-8853-412be3a2a64e.png)
 
 <hr>
 
