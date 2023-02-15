@@ -23,17 +23,12 @@ use libp2p::{
 use libp2p_kad::{GetProvidersOk, GetRecordOk};
 use std::error::Error;
 
-static POD_PORT: &str = "4242";
-
 #[async_std::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     env_logger::init();
     let local_key = identity::Keypair::generate_ed25519();
     let local_peer_id = PeerId::from(local_key.public());
     let transport = development_transport(local_key).await?;
-    let mut multi_address: String = "/ip4/0.0.0.0/tcp/".to_owned();
-
-    multi_address.push_str(&POD_PORT);
 
     #[derive(NetworkBehaviour)]
     #[behaviour(out_event = "DiscoveryAndStoreEvent")]
@@ -69,7 +64,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     };
     let mut stdin = io::BufReader::new(io::stdin()).lines().fuse();
 
-    swarm.listen_on(multi_address.parse()?)?;
+    swarm.listen_on("/ip4/0.0.0.0/tcp/0".parse()?)?;
     loop {
         select! {
         line = stdin.select_next_some() => handle_input_line(&mut swarm.behaviour_mut().kademlia, line.expect("Stdin not to close")),

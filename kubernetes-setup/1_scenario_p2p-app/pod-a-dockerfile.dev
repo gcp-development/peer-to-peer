@@ -1,6 +1,6 @@
 FROM rust:latest
 
-RUN apt-get update && apt-get -y install protobuf-compiler
+RUN apt-get update && apt-get -y install protobuf-compiler iputils-ping dnsutils
 RUN mkdir /usr/src/p2p-app
 
 # Set working directory in container

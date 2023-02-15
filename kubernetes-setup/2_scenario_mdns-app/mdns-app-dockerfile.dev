@@ -1,6 +1,6 @@
 FROM rust:latest
 
-RUN apt-get update && apt-get -y install protobuf-compiler
+RUN apt-get update && apt-get -y install protobuf-compiler iputils-ping dnsutils
 RUN mkdir /usr/src/mdns-app
 
 # Set working directory in container
@@ -12,9 +12,6 @@ COPY Cargo.toml .
 
 # Build release application
 RUN cargo build --release
-
-# Expose listening port for application
-EXPOSE 4242
 
 # Run the application
 CMD ["target/release/mdns-app"]

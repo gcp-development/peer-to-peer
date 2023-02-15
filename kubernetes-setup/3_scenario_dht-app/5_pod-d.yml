@@ -3,12 +3,14 @@ kind: Pod
 metadata:
   name: pod-d
   namespace: peer-to-peer-platform
+  labels:
+    name: node-m02
 spec:
+  nodeSelector:
+    nodelabel: node-02
   containers:
-    - name: pod-d
-      image: bsilveira1974/mdns-pod-b:1.0
+    - name: container-a
+      image: bsilveira1974/dht-app:1.0
       imagePullPolicy: IfNotPresent
       ports:
-        - containerPort: 4242
-    nodeSelector:
-      nodetype=worker
+        - containerPort: 5353
