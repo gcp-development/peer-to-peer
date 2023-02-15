@@ -152,6 +152,8 @@ kubectl delete namespace peer-to-peer-platform
 
 ## Scenario dht-app
 
+![image](https://user-images.githubusercontent.com/76512851/219115025-3b5b9876-690c-4102-8db9-ab2ae97c35ab.png)
+
 ### Dockerfile
 
 ```bash
