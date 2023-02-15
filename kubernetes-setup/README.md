@@ -36,32 +36,34 @@ minikube version
 
 ![image](https://user-images.githubusercontent.com/76512851/217585412-3467872a-4101-4453-9c9e-34ec32402ca1.png)
 
-Minikube setup with [two nodes](https://minikube.sigs.k8s.io/docs/tutorials/multi_node/).
+Create a cluster with [two nodes](https://minikube.sigs.k8s.io/docs/tutorials/multi_node/).
 
 ```bash
-minikube start --driver=docker --cpus=4 --nodes 2 -p minikube-node
+minikube start --driver=docker --nodes 2 -p demo
 ```
 
 ```bash
 kubectl get nodes
 ```
 
-![image](https://user-images.githubusercontent.com/76512851/217586844-d342c20e-76a0-46e3-a4fa-e63f0a94ed6a.png)
+![image](https://user-images.githubusercontent.com/76512851/219060576-b0e321e2-0b21-442f-a439-bcdd23e81c59.png)
+
 
 Add [labels](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/#add-a-label-to-a-node) to both nodes.
+
 ```bash
-kubectl label nodes minikube-node nodetype=control-plane
+kubectl label nodes demo nodelabel=node-01
 ```
 
 ```bash
-kubectl label nodes minikube-node-m02 nodetype=worker
+kubectl label nodes demo-m02 nodelabel=node-01
 ```
 
 ```bash
 kubectl get nodes --show-labels
 ```
 
-![image](https://user-images.githubusercontent.com/76512851/217620938-634d61ca-31c4-45a3-9967-8b68c6e52e9e.png)
+![image](https://user-images.githubusercontent.com/76512851/219061525-eacfc396-6789-4b2a-abad-1ab4fc2125ba.png)
 
 <hr>
 
