@@ -22,7 +22,7 @@ It's assumed that these software are installed and running:
     <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#dockerfile" target="_self">Dokerfile</a></li>
     <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#pods" target="_self">Pods</a></li>
   </ul>
-  <li>dht-app</li>
+  <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-dht-app" target="_self">dht-app</a></li>
   <ul>
     <li>Dokerfile</li>
     <li>Pods</li>
@@ -183,7 +183,7 @@ Create a pod "pod-a" with one container "container-a".
 ```bash
 kubectl apply -f 2_pod-a.yml
 ```
-Note:HostNetwork allows a pod to use the node network namespace.This is done to allow the mDNS to discover all other pods in the node. This is not a [best practice](https://kubernetes.io/docs/concepts/configuration/overview/) and is used only for demonstration proposes.
+Note:HostNetwork allows a pod to use the node-01 network namespace.This is done to allow the mDNS to discover all other pods in the node. This is not a [best practice](https://kubernetes.io/docs/concepts/configuration/overview/) and is used only for demonstration proposes.
 
 Create a pod "pod-b" with one container "container-a".
 
@@ -196,12 +196,18 @@ Create a pod "pod-c" with one container "container-a".
 ```bash
 kubectl apply -f 4_pod-c.yml
 ```
+Note:HostNetwork allows a pod to use the node-02 network namespace.This is done to allow the mDNS to discover all other pods in the node. This is not a [best practice](https://kubernetes.io/docs/concepts/configuration/overview/) and is used only for demonstration proposes.
 
 Create a pod "pod-d" with one container "container-a".
 
 ```bash
 kubectl apply -f 5_pod-d.yml
 ```
+
+```bash
+kubectl get pods -o wide --namespace=peer-to-peer-platform
+```
+
 
 <hr>
 
