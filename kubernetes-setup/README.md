@@ -24,8 +24,8 @@ It's assumed that these software are installed and running:
   </ul>
   <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-dht-app" target="_self">Scenario dht-app</a></li>
   <ul>
-    <li>Dokerfile</li>
-    <li>Pods</li>
+    <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#dockerfile-1" target="_self">Dokerfile</a></li>
+    <li><a href="" target="_self">Pods</a></li>
   </ul>
 </ul>
 <hr>
