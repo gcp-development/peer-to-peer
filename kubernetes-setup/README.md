@@ -56,7 +56,7 @@ kubectl label nodes demo nodelabel=node-01
 ```
 
 ```bash
-kubectl label nodes demo-m02 nodelabel=node-01
+kubectl label nodes demo-m02 nodelabel=node-02
 ```
 
 ```bash
