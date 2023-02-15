@@ -206,6 +206,11 @@ kubectl apply -f 5_pod-d.yml
 kubectl get pods -o wide --namespace=peer-to-peer-platform
 ```
 
+![image](https://user-images.githubusercontent.com/76512851/219071341-c1508a1e-1d18-400b-8298-70601a713869.png)
+
+```bash
+kubectl exec -it pod-a --namespace=peer-to-peer-platform -- /bin/bash
+```
 
 <hr>
 
