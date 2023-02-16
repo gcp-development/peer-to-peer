@@ -71,8 +71,6 @@ For this scenario we are going to create a node with two pods. Each pod will hav
 
 ![image](https://user-images.githubusercontent.com/76512851/219295216-5307945f-7760-4129-9af0-9782b4ae22e1.png)
 
-![image](https://user-images.githubusercontent.com/76512851/217934985-62b1ce28-82fe-4845-bf4b-32eb96bb2cdf.png)
-
 ### Dockerfile
 
 ```bash
