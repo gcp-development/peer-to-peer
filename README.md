@@ -29,6 +29,12 @@ There are some fundamental limitations here. If all computers leave at once, we 
 
 ## Scenarios
 
+<ul>
+ <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-p2p-app">Scenario p2p-app</a></li>
+ <li><a href="">Scenario mdns-app</a></li>
+ <li><a href="">Scenario dht-app</a></li>
+</ul>
+ 
 For the scenarios developed some network considerations need to be understood:
 
 ### Communication between pods on the same node
