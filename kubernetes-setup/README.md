@@ -219,7 +219,7 @@ Login into the pod-a, execute the command "cargo run" and insert the IP value fo
 kubectl exec -it pod-a --namespace=peer-to-peer-platform -- /bin/bash
 ```
 
-![image](https://user-images.githubusercontent.com/76512851/219097457-500341a0-777a-426f-81d5-d5b63da70d20.png)
+![image](https://user-images.githubusercontent.com/76512851/219317769-2a37a881-cb2b-4bf9-be3a-bceea9a5292b.png)
 
 Login into the pod-d, execute the command "cargo run" and get the IP value for the pod-a from the Distributed Hash Tables/Kademlia "GET pod-a".
 
