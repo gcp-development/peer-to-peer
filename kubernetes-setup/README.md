@@ -63,12 +63,9 @@ kubectl get nodes --show-labels
 ```
 ![image](https://user-images.githubusercontent.com/76512851/219067571-4a184c2c-b1cb-4e45-8853-412be3a2a64e.png)
 
-
-
-## Scenario p2p-app
-
 <hr>
 
+## Scenario p2p-app
 
 ### Dockerfile
 
