@@ -39,6 +39,7 @@ For demonstration purposes, three scenarios were created. These scenarios were b
  
 For the scenarios developed some network considerations need to be understood:
 
+<ul>
 ### Communication between pods on the same node
 
 A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request. 
@@ -51,6 +52,8 @@ At the cluster level, there’s a table that maps IP address ranges to various n
 
 ![image](https://user-images.githubusercontent.com/76512851/216921925-85ff702b-690e-4c80-8b07-d8068a34c36c.png)
 
+ <ul>
+  
 ### Conclusion
 
 The underlying objective is to leverages the power of p2p networks via the [libp2p-rust](https://github.com/libp2p/rust-libp2p) to provide a shared and trusted ledger of transactions (blockchain technology).
