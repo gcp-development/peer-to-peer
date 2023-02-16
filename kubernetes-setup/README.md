@@ -226,7 +226,8 @@ Login into the pod-d, execute the command "cargo run" and get the IP value for t
 ```bash
 kubectl exec -it pod-d --namespace=peer-to-peer-platform -- /bin/bash
 ```
-![image](https://user-images.githubusercontent.com/76512851/219100821-0b996a94-defc-4ef8-9543-c8138eb38876.png)
+
+![image](https://user-images.githubusercontent.com/76512851/219321657-d6c6ea58-2c7b-4b61-8450-e032be2db3fc.png)
 
 Login into the pod-b, execute the command "cargo run", insert the IP value for the pod-b from the Distributed Hash Tables/Kademlia "PUT pod-b 10.244.0.3" and insert pod-b as a provider "PUT_PROVIDER pod-b".
 
