@@ -53,7 +53,7 @@ At the cluster level, there’s a table that maps IP address ranges to various n
 
 ![image](https://user-images.githubusercontent.com/76512851/216921925-85ff702b-690e-4c80-8b07-d8068a34c36c.png)
  </li>
- <ul>
+</ul>
   
 ### Conclusion
 
