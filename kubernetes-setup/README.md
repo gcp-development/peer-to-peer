@@ -228,10 +228,14 @@ kubectl exec -it pod-d --namespace=peer-to-peer-platform -- /bin/bash
 ```
 ![image](https://user-images.githubusercontent.com/76512851/219100821-0b996a94-defc-4ef8-9543-c8138eb38876.png)
 
+Login into the pod-b, execute the command "cargo run", insert the IP value for the pod-b from the Distributed Hash Tables/Kademlia "PUT pod-b 10.244.0.3" and insert pod-b as a provider "PUT_PROVIDER pod-b".
+
 ```bash
 kubectl exec -it pod-b --namespace=peer-to-peer-platform -- /bin/bash
 ```
 ![image](https://user-images.githubusercontent.com/76512851/219108166-ca110ab8-7c27-4364-bcd4-4e5b83c068cd.png)
+
+Login into the pod-c, execute the command "cargo run", get the IP value for the pod-b from the Distributed Hash Tables/Kademlia "GET pod-b" and GET pod-b as a provider "GET_PROVIDER pod-b".
 
 ```bash
 kubectl exec -it pod-c --namespace=peer-to-peer-platform -- /bin/bash
