@@ -40,18 +40,19 @@ For demonstration purposes, three scenarios were created. These scenarios were b
 For the scenarios developed some network considerations need to be understood:
 
 <ul>
-### Communication between pods on the same node
+ <li>Communication between pods on the same node
 
 A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request. 
  
 ![image](https://user-images.githubusercontent.com/76512851/216921321-ec8ff596-73bb-4215-9aec-cf8a1d874902.png)
-
-### Communication between pods on different nodes
+ </li>
+ <li>
+Communication between pods on different nodes
 
 At the cluster level, there’s a table that maps IP address ranges to various nodes. Pods on those nodes will have been assigned IP addresses from those ranges.<br>
 
 ![image](https://user-images.githubusercontent.com/76512851/216921925-85ff702b-690e-4c80-8b07-d8068a34c36c.png)
-
+ </li>
  <ul>
   
 ### Conclusion
