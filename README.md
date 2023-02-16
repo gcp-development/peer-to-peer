@@ -29,6 +29,8 @@ There are some fundamental limitations here. If all computers leave at once, we 
 
 ## Scenarios
 
+For demonstration purposes, three scenarios were created. These scenarios were built using kubernetes:
+
 <ul>
  <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-p2p-app">Scenario p2p-app</a></li>
  <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-mdns-app">Scenario mdns-app</a></li>
