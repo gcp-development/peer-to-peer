@@ -69,8 +69,6 @@ kubectl get nodes --show-labels
 
 ### Dockerfile
 
-![image](https://user-images.githubusercontent.com/76512851/214598654-10fe08b3-0297-4122-a26f-d12c894f7491.png)
-
 ```bash
 docker build -f /p2p-setup/pod-a-dockerfile.dev -t p2p-pod-a:1.0 .
 ```
