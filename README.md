@@ -29,6 +29,8 @@ There are some fundamental limitations here. If all computers leave at once, we 
 
 ## Scenarios
 
+For the scenarios developed some network considerations need to be understood:
+
 ### Communication between pods on the same node
 
 A network bridge connects two networks together. When a request hits the bridge, the bridge asks all the connected devices (i.e. pods) if they have the right IP address to handle the original request. 
