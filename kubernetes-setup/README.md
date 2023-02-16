@@ -152,7 +152,7 @@ kubectl delete namespace peer-to-peer-platform
 
 ## Scenario dht-app
 
-For this scenario we are going to create a cluster with two nodes, with two pods each. For the mDNS protocol to discover devices outside the pod local network. The HostNetwork is set to true(hostNetwork: true) to allow a pod to use the node network namespace. This was done for pod-a and pod-c.
+For this scenario we are going to create a cluster with two nodes, with two pods each. For the mDNS protocol to discover devices outside the pod local network. The HostNetwork is set to true(hostNetwork: true) to allow a pod to use the node network namespace. This was done for pod-a and pod-c. The network behavior is composed by the mDNS protocol for discovery and [Kademlia](https://docs.ipfs.tech/concepts/dht/#kademlia) for storing the IPs of the peers found and providers.
 
 ![image](https://user-images.githubusercontent.com/76512851/219296386-dbe19ca5-c1c1-496b-b430-137b8428a0e0.png)
 
@@ -205,11 +205,15 @@ Create a pod "pod-d" with one container "container-a".
 kubectl apply -f 5_pod-d.yml
 ```
 
+Get all pods created.
+
 ```bash
 kubectl get pods -o wide --namespace=peer-to-peer-platform
 ```
 
 ![image](https://user-images.githubusercontent.com/76512851/219071341-c1508a1e-1d18-400b-8298-70601a713869.png)
+
+Login into the pod-a, execute the command "cargo run" and insert the IP value for the pod-a into the Distributed Hash Tables/Kademlia "PUT pod-a 192.168.49.2".
 
 ```bash
 kubectl exec -it pod-a --namespace=peer-to-peer-platform -- /bin/bash
