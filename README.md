@@ -9,10 +9,6 @@ Peer to Peer networks are fundamental to the blockchain technology, they provide
 
 Peer to peer networks(P2P) is defined as the group of devices that are connected together to create a network. [libp2p](https://libp2p.io/) is a modular peer-to-peer networking framework.
 
-![image](https://user-images.githubusercontent.com/76512851/214358618-6d3895ff-2da4-4169-840c-200499844b58.png)
-
-Two [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) were created to accommodate the p2p-app. Which is a Rust application using the [libp2p ping protocol](https://docs.libp2p.io/concepts/introduction/protocols/ping/) to test the connectivity and performance between these two Pods. For each Pod a [image](https://docs.docker.com/engine/reference/commandline/image/) is created and deployed into the [container](https://kubernetes.io/docs/concepts/containers/) inside of the corresponding Pod.
-
 Although libp2p was originally developed to work with [IPFS](https://ipfs.tech/), we want to use it to create p2p applications that have no relationship to IPFS at all.
 
 In order to do that we need:
