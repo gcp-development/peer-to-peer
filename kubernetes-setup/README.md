@@ -154,7 +154,7 @@ kubectl delete namespace peer-to-peer-platform
 
 For this scenario we are going to create a cluster with two nodes, with two pods each. For the mDNS protocol to discover devices outside the pod local network. The HostNetwork is set to true(hostNetwork: true) to allow a pod to use the node network namespace. This was done for pod-a and pod-c.
 
-![image](https://user-images.githubusercontent.com/76512851/219115025-3b5b9876-690c-4102-8db9-ab2ae97c35ab.png)
+![image](https://user-images.githubusercontent.com/76512851/219296386-dbe19ca5-c1c1-496b-b430-137b8428a0e0.png)
 
 ### Dockerfile
 
