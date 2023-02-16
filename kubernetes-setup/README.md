@@ -221,6 +221,8 @@ kubectl exec -it pod-a --namespace=peer-to-peer-platform -- /bin/bash
 
 ![image](https://user-images.githubusercontent.com/76512851/219097457-500341a0-777a-426f-81d5-d5b63da70d20.png)
 
+Login into the pod-d, execute the command "cargo run" and get the IP value for the pod-a from the Distributed Hash Tables/Kademlia "GET pod-a".
+
 ```bash
 kubectl exec -it pod-d --namespace=peer-to-peer-platform -- /bin/bash
 ```
