@@ -27,6 +27,24 @@ A [distributed hash table (DHT)](https://docs.ipfs.tech/concepts/dht/) is a dist
 
 There are some fundamental limitations here. If all computers leave at once, we have nowhere to store anything. We will need to replicate keys across different computers so that key-value pairs will be recoverable even if some of those computers leave at once.
 
+<hr>
+
+## libp2p
+
+libp2p was designed around the philosophy of creating small components that are easy to understand and test. These components should also be able to be swapped in order to accommodate different technologies or scenarios and also make it feasible to upgrade them over time. ([Microservices](https://microservices.io/), anyone?!?)
+
+## Architecture
+
+![image](https://user-images.githubusercontent.com/76512851/214889597-8540ce06-66e6-4739-b8df-22823a92fb78.png)
+
+The libp2p interface acts as a thin veneer over a multitude of subsystems that are required in order for peers to be able to communicate. The main areas where these subsystems fit are:
+<ul>
+  <li>Peer Routing - Mechanism to decide which peers to use for routing particular messages. This routing can be done recursively, iteratively or even in a broadcast/multicast mode.</li>
+  <li>Swarm - Handles everything that touches the 'opening a stream' part of libp2p, from protocol muxing, stream muxing, NAT traversal and connection relaying, while being multi-transport.</li>
+  <li>Distributed Record Store - A system to store and distribute records. Records are small entries used by other systems for signaling, establishing links, announcing peers or content, and so on. They have a similar role to DNS in the broader Internet.</li>
+  <li>Discovery - Finding or identifying other peers in the network.</li>
+</ul>
+
 ## Scenarios
 
 For demonstration purposes, three scenarios were created using kubernetes:
@@ -65,24 +83,6 @@ Source code:
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/mdns-app" target="_self">mdns-app</a> mDNS example.</li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/dht-app" target="_self">dht-app</a> mDNS/Kademlia(DHT) example.</li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/kubernetes-setup" target="_self">kubernetes-setup</a> Kubernetes setup.</li>
-</ul>
-
-<hr>
-
-## libp2p
-
-libp2p was designed around the philosophy of creating small components that are easy to understand and test. These components should also be able to be swapped in order to accommodate different technologies or scenarios and also make it feasible to upgrade them over time. ([Microservices](https://microservices.io/), anyone?!?)
-
-## Architecture
-
-![image](https://user-images.githubusercontent.com/76512851/214889597-8540ce06-66e6-4739-b8df-22823a92fb78.png)
-
-The libp2p interface acts as a thin veneer over a multitude of subsystems that are required in order for peers to be able to communicate. The main areas where these subsystems fit are:
-<ul>
-  <li>Peer Routing - Mechanism to decide which peers to use for routing particular messages. This routing can be done recursively, iteratively or even in a broadcast/multicast mode.</li>
-  <li>Swarm - Handles everything that touches the 'opening a stream' part of libp2p, from protocol muxing, stream muxing, NAT traversal and connection relaying, while being multi-transport.</li>
-  <li>Distributed Record Store - A system to store and distribute records. Records are small entries used by other systems for signaling, establishing links, announcing peers or content, and so on. They have a similar role to DNS in the broader Internet.</li>
-  <li>Discovery - Finding or identifying other peers in the network.</li>
 </ul>
 
 <hr>
