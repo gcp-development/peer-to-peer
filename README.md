@@ -88,5 +88,5 @@ Source code:
 <hr>
 
 References:<br>
-[Rust libp2p](https://github.com/libp2p/rust-libp2p)
+[Rust libp2p](https://github.com/libp2p/rust-libp2p)<br>
 [libp2p documentation](https://docs.libp2p.io/concepts/introduction/overview/)<br>
