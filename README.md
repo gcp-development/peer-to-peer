@@ -50,9 +50,9 @@ The libp2p interface acts as a thin veneer over a multitude of subsystems that a
 For demonstration purposes, three scenarios were created using kubernetes:
 
 <ul>
- <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-p2p-app">Scenario p2p-app</a></li>
- <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-mdns-app">Scenario mdns-app</a></li>
- <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-dht-app">Scenario dht-app</a></li>
+ <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-p2p-app">Scenario p2p-app (ping protocol)</a></li>
+ <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-mdns-app">Scenario mdns-app (mDNS)</a></li>
+ <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-dht-app">Scenario dht-app (mDNS/Kademlia)</a></li>
 </ul>
  
 For the scenarios developed some network considerations need to be understood:
