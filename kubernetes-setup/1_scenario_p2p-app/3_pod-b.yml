@@ -4,11 +4,11 @@ metadata:
   name: pod-b
   namespace: peer-to-peer-platform
 spec:
+  nodeSelector:
+    nodelabel: node-01
   containers:
-    - name: pod-b
+    - name: container-a
       image: bsilveira1974/p2p-pod-b:1.0
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 4242
-    nodeSelector:
-      nodetype=control-plane

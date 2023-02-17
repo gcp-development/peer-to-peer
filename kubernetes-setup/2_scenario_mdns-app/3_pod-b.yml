@@ -5,7 +5,7 @@ metadata:
   namespace: peer-to-peer-platform
 spec:
   nodeSelector:
-    nodetype: control-plane
+    nodelabel: node-01
   containers:
   - name: container-a
     image: bsilveira1974/mdns-app:1.0
