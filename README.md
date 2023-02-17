@@ -31,7 +31,7 @@ There are some fundamental limitations here. If all computers leave at once, we 
 
 ## libp2p
 
-libp2p was designed around the philosophy of creating small components that are easy to understand and test. These components should also be able to be swapped in order to accommodate different technologies or scenarios and also make it feasible to upgrade them over time. ([Microservices](https://microservices.io/), anyone?!?)
+libp2p was designed around the philosophy of creating small components that are easy to understand and test. These components should also be able to be swapped in order to accommodate different technologies or scenarios and also make it feasible to upgrade them over time. 
 
 ## Architecture
 
