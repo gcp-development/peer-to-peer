@@ -14,8 +14,8 @@ It's assumed that these software are installed and running:
   <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#minikube-setup" target="_self">minikube setup</a></li>
   <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-p2p-app" target="_self">Scenario p2p-app</a></li>
   <ul>
-    <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#dockerfile" target="_self">Dokerfile</a></li>
-    <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/p2p-setup#pods" target="_self">Pods</a></li>
+    <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/kubernetes-setup#dockerfile" target="_self">Dokerfile</a></li>
+    <li><a href="https://github.com/gcp-development/peer-to-peer/tree/main/kubernetes-setu#pods" target="_self">Pods</a></li>
   </ul>
   <li><a href="https://github.com/gcp-development/peer-to-peer/blob/main/kubernetes-setup/README.md#scenario-mdns-app">Scenario mdns-app</a></li>
   <ul>
