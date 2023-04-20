@@ -1,26 +1,28 @@
 use async_std::io;
 use futures::{prelude::*, select};
-use libp2p::kad::record::store::MemoryStore;
-use libp2p::kad::{
-    record::Key,
-    AddProviderOk,
-    Kademlia,
-    KademliaEvent,
-    PeerRecord,
-    PutRecordOk,
-    QueryResult,
-    Quorum,
-    Record,
-};
 use libp2p::{
-    development_transport,
-    identity,
-    mdns,
-    swarm::{NetworkBehaviour, SwarmEvent},
     PeerId,
-    Swarm,
+    {
+        development_transport,
+        identity,
+        mdns,
+        swarm::{NetworkBehaviour, SwarmEvent, SwarmBuilder}
+    },
+    kad::{
+        store::MemoryStore,
+        AddProviderOk,
+        Kademlia,
+        KademliaEvent,
+        PeerRecord,
+        PutRecordOk,
+        QueryResult,
+        Quorum,
+        Record,
+        GetProvidersOk,
+        GetRecordOk,
+        RecordKey
+    },
 };
-use libp2p_kad::{GetProvidersOk, GetRecordOk};
 use std::error::Error;
 
 #[async_std::main]
@@ -58,9 +60,9 @@ async fn main() -> Result<(), Box<dyn Error>> {
     let mut swarm = {
         let store = MemoryStore::new(local_peer_id);
         let kademlia = Kademlia::new(local_peer_id, store);
-        let mdns = mdns::async_io::Behaviour::new(mdns::Config::default())?;
+        let mdns = mdns::async_io::Behaviour::new(mdns::Config::default(),local_peer_id)?;
         let behaviour = DiscoveryAndStoreBehaviour { kademlia, mdns };
-        Swarm::with_async_std_executor(transport, behaviour, local_peer_id)
+        SwarmBuilder::with_async_std_executor(transport, behaviour, local_peer_id).build()
     };
     let mut stdin = io::BufReader::new(io::stdin()).lines().fuse();
 
@@ -90,8 +92,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
                     QueryResult::GetProviders(Err(err)) => {
                         eprintln!("Failed to get providers: {err:?}");
                     }
-                    QueryResult::GetRecord(Ok(
-                        GetRecordOk::FoundRecord(PeerRecord {
+                    QueryResult::GetRecord(Ok(GetRecordOk::FoundRecord(PeerRecord {
                             record: Record { key, value, .. },
                             ..
                         })
@@ -140,7 +141,7 @@ fn handle_input_line(kademlia: &mut Kademlia<MemoryStore>, line: String) {
         Some("GET") => {
             let key = {
                 match args.next() {
-                    Some(key) => Key::new(&key),
+                    Some(key) => RecordKey::new(&key),
                     None => {
                         eprintln!("Expected key");
                         return;
@@ -152,7 +153,7 @@ fn handle_input_line(kademlia: &mut Kademlia<MemoryStore>, line: String) {
         Some("GET_PROVIDERS") => {
             let key = {
                 match args.next() {
-                    Some(key) => Key::new(&key),
+                    Some(key) => RecordKey::new(&key),
                     None => {
                         eprintln!("Expected key");
                         return;
@@ -164,7 +165,7 @@ fn handle_input_line(kademlia: &mut Kademlia<MemoryStore>, line: String) {
         Some("PUT") => {
             let key = {
                 match args.next() {
-                    Some(key) => Key::new(&key),
+                    Some(key) => RecordKey::new(&key),
                     None => {
                         eprintln!("Expected key");
                         return;
@@ -193,14 +194,13 @@ fn handle_input_line(kademlia: &mut Kademlia<MemoryStore>, line: String) {
         Some("PUT_PROVIDER") => {
             let key = {
                 match args.next() {
-                    Some(key) => Key::new(&key),
+                    Some(key) => RecordKey::new(&key),
                     None => {
                         eprintln!("Expected key");
                         return;
                     }
                 }
             };
-
             kademlia
                 .start_providing(key)
                 .expect("Failed to start providing key");

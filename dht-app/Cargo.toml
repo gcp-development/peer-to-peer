@@ -6,7 +6,8 @@ edition = "2021"
 [dependencies]
 env_logger = "0.10.0"
 futures = "0.3.26"
-libp2p = { version = "0.50.0", features = [
+async-std = { version = "1.12.0" , features = ["attributes"]}
+libp2p = { version = "0.51.2", features = [
     "async-std",
     "autonat",
     "dcutr",
@@ -43,5 +44,3 @@ libp2p = { version = "0.50.0", features = [
     "websocket",
     "yamux"
 ]}
-libp2p-kad = "0.42.1"
-async-std = { version = "1.12.0" , features = ["attributes"]}
