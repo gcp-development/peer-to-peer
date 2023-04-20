@@ -5,5 +5,5 @@ edition = "2021"
 
 [dependencies]
 futures = "0.3.26"
-libp2p = { version = "0.50.0", features = ["async-std","tcp", "dns", "gossipsub","mdns","websocket","noise","mplex","yamux"] }
+libp2p = { version = "0.51.2", features = ["async-std","tcp", "dns", "gossipsub","mdns","websocket","noise","mplex","yamux"] }
 async-std = { version = "1.12.0" , features = ["attributes"]}
